@@ -1,25 +1,20 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
-@import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
 
-:root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
+/* common styles */
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+@import url('./common/fonts.css');
+@import url('./common/modern-normalize.css');
+@import url('./common/reset.css');
+@import url('./common/base.css');
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
-}
+/* components styles */
+
+@import url('./components/header.css');
+@import url('./components/hero.css');
+@import url('./components/about-block.css');
+@import url('./components/yahts-block.css');
+@import url('./components/services-block.css');
+@import url('./components/rent-block.css');
+@import url('./components/reviews.css');
+@import url('./components/footer.css');
+@import url('./components/modal-rent.css');
+@import url('./components/modal-mobail.css');
