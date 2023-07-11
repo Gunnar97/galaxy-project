@@ -1,0 +1,34 @@
+:root {
+    --text-color: #F6F5EF;
+    --background-color: #11131F;
+    --yachtblock-cards-background-: #1F212D;
+    --button-light-background: #93ABAE;
+    --title-green-part: linear (#BEC7C2, #A1B5BA);
+    --hero-image-text: #11131F;
+    --reviews-card-paragraf-text: #F6F5EF80;
+    --background-gradient-circles: #91AFBA;
+    --background-gradient-circles-small: #A6A9B2;
+    --hero-backgroun-circle: #939CAC;
+    --services-image-color: #11131F33;
+    --reviews-card-background: #1F212D;
+    --hero-clients-circles-border: #93ABAE;
+    --hero-clients-circles-background: #E3E3E3;
+    --header-underline-color: #F6F5EF33;
+    --aboutblock-image-gradient: linear (#000000, #11131F);
+    --transition-duration-250: 250ms;
+    --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: 'DM Sans', sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.32px;
+}
+
+.link:focus {
+    background-color: transparent;
+}
