@@ -1,0 +1,221 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.slide {
+  width: 200px;
+}
+.yahts-section {
+  /* box-sizing: border-box; */
+
+  margin: 0 auto;
+  padding: 0 20px;
+  outline: 1px solid tomato;
+}
+
+.yacht-title {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 80px;
+}
+
+.swiper-container {
+  /* max-width: 375px; */
+}
+
+.swiper {
+  width: 100%;
+
+  height: 569px;
+  /* outline: 2px solid green; */
+}
+.swiper-slide {
+}
+
+.swiper-button-next {
+  top: 90%;
+  right: 40%;
+  transform: translateX(50%);
+}
+.swiper-button-prev {
+  top: 90%;
+  left: 40%;
+  transform: translateX(-50%);
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  background-color: lightgreen;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  display: none;
+}
+
+.swiper-card {
+  background-color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 24px;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 18px 18px 24px;
+
+  color: #f6f5ef;
+  /* outline: 1px solid tomato; */
+  background-color: #1f212d;
+}
+
+.card,
+.card img {
+  border-radius: 28px;
+}
+
+.card img {
+  display: block;
+  max-width: 100%;
+  height: 251px;
+}
+
+.card-description {
+  display: flex;
+  flex-direction: column;
+  padding-left: 6px;
+
+  gap: 25px;
+  max-width: 287px;
+}
+
+.card-title {
+  box-sizing: border-box;
+  width: 100%;
+  /* padding-left: 6px; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-data {
+  display: flex;
+  gap: 32px;
+  /* padding-left: 6px; */
+}
+.parametrs,
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.title-type {
+  text-align: right;
+}
+
+@media only screen and (min-width: 375px) {
+  .yahts-section {
+    max-width: 375px;
+  }
+
+  .swiper-container {
+    width: 100%;
+    outline: 1px solid tomato;
+  }
+
+  .swiper {
+    width: 100%;
+    max-width: 335px;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 335px;
+  }
+
+  .card-description {
+    max-width: 287px;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .yahts-section {
+      max-width: 768px;
+      padding: 0 32px;
+    }
+
+    .swiper {
+      width: 100%;
+      max-width: 704px;
+    }
+
+    .swiper-button-next {
+      top: 100%;
+      right: 294px;
+      transform: translateY(-50%);
+      border-radius: 50%;
+    }
+    .swiper-button-prev {
+      top: 100%;
+      left: 294px;
+      transform: translateY(-50%);
+    }
+
+    .card {
+      max-width: 344px;
+      padding: 16px 16px 32px;
+    }
+
+    .card-description {
+      max-width: 280px;
+      padding-left: 16px;
+    }
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .yahts-section {
+    max-width: 1216px;
+  }
+
+  .swiper-container {
+    max-width: 1216px;
+    height: 508px;
+  }
+
+  .swiper {
+    width: 100%;
+    max-width: 1216px;
+  }
+
+  .swiper-card {
+    /* width: (calc(100% - 16px * 2) / 3); */
+    width: 354px;
+    padding: 10px;
+  }
+
+  .swiper-button-next {
+    top: 50%;
+    right: 0;
+    transform: translateX(-50%);
+  }
+  .swiper-button-prev {
+    top: 50%;
+    left: 0;
+    transform: translateX(50%);
+  }
+
+  .card {
+    width: 100%;
+    /* height: 100%; */
+    max-width: 354px;
+  }
+  .card-description {
+    max-width: 290px;
+  }
+}
