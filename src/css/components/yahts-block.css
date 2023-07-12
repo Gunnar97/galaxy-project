@@ -13,6 +13,12 @@
 }
 
 .section-title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+  font-size: 36px;
   max-width: 310px;
 }
 
@@ -190,6 +196,11 @@
     padding: 0;
   }
 
+  .section-title {
+    font-size: 36px;
+    max-width: 310px;
+  }
+
   .card-title,
   .card-data {
     padding: 0 6px;
@@ -212,7 +223,7 @@
   }
 
   .section-title {
-    max-width: 641px;
+    max-width: 640px;
   }
 
   .yahts-section {
@@ -225,10 +236,7 @@
 
   .section-title {
     font-size: 70px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 110%;
-    letter-spacing: -3.15px;
+    max-width: 641px;
   }
   .yacht-title .rental-btn {
     font-size: 18px;
@@ -257,6 +265,11 @@
   .container {
     max-width: 1280px;
     margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 100px;
+    max-width: 442px;
   }
 
   .slider-container {
