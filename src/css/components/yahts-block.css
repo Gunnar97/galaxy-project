@@ -47,8 +47,9 @@ body {
   border: 1px solid var(--text-color);
 }
 
-.swiper-container,
+.slider-container,
 .swiper-card {
+  outline: 1px solid tomato;
   /* max-width: 375px; */
   border-radius: 29px;
 }
@@ -58,8 +59,6 @@ body {
 
   height: 569px;
   /* outline: 2px solid green; */
-}
-.swiper-slide {
 }
 
 .swiper-button-next {
@@ -159,7 +158,7 @@ body {
 
   .swiper-container {
     width: 100%;
-    outline: 1px solid tomato;
+    outline: 1px solid blue;
   }
 
   .swiper {
@@ -193,11 +192,6 @@ body {
       letter-spacing: -0.81px;
     }
 
-    .swiper {
-      width: 100%;
-      max-width: 704px;
-    }
-
     .swiper-button-next {
       top: 100%;
       right: 294px;
@@ -229,20 +223,14 @@ body {
     padding: 0 199px;
   }
 
-  .swiper-container {
+  .slider-container {
     max-width: 1216px;
     height: 508px;
   }
 
-  .swiper {
-    width: 100%;
-    max-width: 1216px;
-  }
-
   .swiper-card {
     /* width: (calc(100% - 16px * 2) / 3); */
-    width: 354px;
-    padding: 10px;
+    /* width: 354px; */
   }
 
   .swiper-button-next {
