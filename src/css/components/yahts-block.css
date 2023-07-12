@@ -121,23 +121,13 @@
   border-radius: 29px;
 }
 
-.card-description {
-  font-family: DM Sans, sans-serif;
-  display: flex;
-  flex-direction: column;
-  padding-left: 6px;
-
-  font-family: DM;
-
-  gap: 25px;
-  max-width: 287px;
-}
 .card-title {
   font-family: DM Sans;
   box-sizing: border-box;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card-data {
@@ -145,14 +135,47 @@
   display: flex;
   gap: 32px;
 }
+
+.card-info {
+  width: max-content;
+}
 .parametrs,
 .info {
   display: flex;
   flex-direction: column;
+  width: fit-content;
   gap: 6px;
 }
 
+.card-info,
+.card-parametr {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.42px;
+}
+
+.title-name {
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
 .title-type {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
   text-align: right;
 }
 
@@ -165,6 +188,15 @@
 @media only screen and (min-width: 375px) {
   .container {
     padding: 0;
+  }
+
+  .card-title,
+  .card-data {
+    padding: 0 6px;
+  }
+
+  .card img {
+    height: 251px;
   }
 }
 @media only screen and (min-width: 768px) {
@@ -205,6 +237,21 @@
     line-height: 110%;
     letter-spacing: -0.81px;
   }
+
+  .card {
+    padding: 16px 16px 32px;
+    gap: 32px;
+  }
+
+  .card img {
+    height: 268px;
+  }
+
+  .card-title,
+  .card-data {
+    width: 100%;
+    padding: 0 16px;
+  }
 }
 @media only screen and (min-width: 1280px) {
   .container {
@@ -218,12 +265,30 @@
   }
   .yacht-title {
     margin: 0 auto;
-    /* background-image: url('../../img/yachts-block/background/big-light-bg@1x-1.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: 414px 414px; */
+  }
 
-    /* outline: 1px solid tomato; */
+  .slide-card {
+    justify-content: center;
+  }
+
+  .card {
+    padding: 16px 16px 32px;
+    gap: 32px;
+  }
+
+  .card-title,
+  .card-data {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .card-info,
+  .card-parametr {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.42px;
   }
 
   .section-title {
