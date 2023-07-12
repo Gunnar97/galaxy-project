@@ -1,31 +1,35 @@
-<header class="header container">
-  <nav class="header-navigation">
-    <a class="logo-link" href="#">
-      <svg class="logo-icon" width="22" height="22">
+<header class="container">
+  <div class="header-wrapper">
+    <nav class="header-navigation">
+      <a class="header-logo-link" href="#">
+        <svg class="header-logo-icon">
+          <use href=""></use>
+        </svg>
+
+        <span class="logo-text">yaht Adventures</span>
+      </a>
+      <ul class="header-nav-list">
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#about">About</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#yahts">Yahts</a>
+        </li>
+        <li class="header-nav-item">
+          <a class="header-nav-link" href="#reviews">Reviews</a>
+        </li>
+      </ul>
+    </nav>
+
+    <button
+      class="header-burger-btn js-open-menu"
+      type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <svg class="header-burger-icon" width="24" height="24">
         <use href=""></use>
       </svg>
-      <span class="logo-text">yaht Adventures</span>
-    </a>
-    <ul class="header-nav-list">
-      <li class="header-nav-item">
-        <a class="header-nav-link" href="">About</a>
-      </li>
-      <li class="header-nav-item">
-        <a class="header-nav-link" href="">Yahts</a>
-      </li>
-      <li class="header-nav-item">
-        <a class="header-nav-link" href="">Reviews</a>
-      </li>
-    </ul>
-  </nav>
-
-  <button
-    class="header-burger-btn"
-    aria-expanded="false"
-    aria-controls="mobile-menu"
-  >
-    <svg class="header-burger-icon" width="24" height="24">
-      <use href=""></use>
-    </svg>
-  </button>
+    </button>
+  </div>
 </header>
