@@ -1,4 +1,7 @@
 @font-face {
-    font-family: ;
-    src: url();
+    font-family:"DM Sans";
+    src: url(../fonts/DMSans-Bold.ttf),
+        url(../fonts/DMSans-Medium.ttf),
+        url(../fonts/DMSans-MediumItalic.ttf),
+        url(../fonts/DMSans-Regular.ttf);
 }
