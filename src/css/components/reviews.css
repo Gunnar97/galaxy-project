@@ -175,7 +175,7 @@
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     column-gap: 16px;
     flex-basis: calc((100% - 1 * 16) / 2);
@@ -286,7 +286,7 @@
   .review-card-list {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     column-gap: 32px;
     flex-basis: calc((100%- 2 * 32) / 3);
