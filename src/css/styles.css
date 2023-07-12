@@ -1,9 +1,9 @@
 /* common styles */
 
-/* @import url('./common/fonts.css');
+@import url('./common/fonts.css');
 @import url('./common/modern-normalize.css');
 @import url('./common/reset.css');
-@import url('./common/base.css'); */
+@import url('./common/base.css');
 
 /* components styles */
 
@@ -17,3 +17,5 @@
 @import url('./components/footer.css');
 @import url('./components/modal-rent.css');
 @import url('./components/modal-mobail.css'); */
+
+@import url('./components/yahts-block.css');

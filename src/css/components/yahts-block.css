@@ -3,10 +3,13 @@
   display: flex;
   flex-direction: column;
   gap: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 
   margin: 0 auto;
-  /* padding: 0 20px; */
-  outline: 1px solid tomato;
+
+  /* outline: 1px solid tomato; */
 }
 
 .section-title {
@@ -17,7 +20,6 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  /* margin-bottom: 80px; */
 
   font-family: DM Sans;
   font-size: 36px;
@@ -50,7 +52,7 @@
   height: 529px;
   margin: 0 auto;
   padding: 0;
-  outline: 1px solid tomato;
+  /* outline: 1px solid tomato; */
 }
 
 .swiper-container {
@@ -120,6 +122,7 @@
 }
 
 .card-description {
+  font-family: DM Sans, sans-serif;
   display: flex;
   flex-direction: column;
   padding-left: 6px;
@@ -175,11 +178,65 @@
     width: 704px;
     padding: 0;
   }
+
+  .section-title {
+    max-width: 641px;
+  }
+
+  .yahts-section {
+    gap: 100px;
+  }
+
+  .yacht-title {
+    gap: 64px;
+  }
+
+  .section-title {
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -3.15px;
+  }
+  .yacht-title .rental-btn {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.81px;
+  }
 }
 @media only screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
   .slider-container {
     width: 1216px;
     margin: 0 auto;
+  }
+  .yacht-title {
+    margin: 0 auto;
+    /* background-image: url('../../img/yachts-block/background/big-light-bg@1x-1.png');
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: 414px 414px; */
+
+    /* outline: 1px solid tomato; */
+  }
+
+  .section-title {
+    max-width: 882px;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -4.5px;
+  }
+
+  .yahts-section {
+    gap: 164px;
   }
 
   .swiper-container {

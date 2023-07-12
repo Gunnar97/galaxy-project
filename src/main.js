@@ -9,7 +9,7 @@ const swiper = new Swiper('.swiper', {
   // freemode: true, // дозволяє перетаскувати мишкою
   spaceBetween: 16,
   loop: true, // true - круговий слайдер, false - зкінцевим положенням
-  slidesPerView: 2, // кількість активних слайдів
+  slidesPerView: 1, // кількість активних слайдів
   centeredSlides: false, // центрування слайду
   // Navigation arrows
   navigation: {
