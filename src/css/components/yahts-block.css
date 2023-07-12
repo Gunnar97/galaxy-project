@@ -8,21 +8,49 @@ body {
 }
 .yahts-section {
   /* box-sizing: border-box; */
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 
   margin: 0 auto;
   padding: 0 20px;
   outline: 1px solid tomato;
 }
 
+.section-title {
+  max-width: 310px;
+}
+
 .yacht-title {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
+
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
 }
 
-.swiper-container {
+.yacht-title .rental-btn {
+  width: max-content;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.63px;
+  border-radius: 60px;
+  border: 1px solid var(--text-color);
+}
+
+.swiper-container,
+.swiper-card {
   /* max-width: 375px; */
+  border-radius: 29px;
 }
 
 .swiper {
@@ -88,9 +116,12 @@ body {
 }
 
 .card-description {
+  font-family: DM Sans;
   display: flex;
   flex-direction: column;
   padding-left: 6px;
+
+  font-family: DM;
 
   gap: 25px;
   max-width: 287px;
@@ -122,6 +153,7 @@ body {
 
 @media only screen and (min-width: 375px) {
   .yahts-section {
+    width: 100%;
     max-width: 375px;
   }
 
@@ -148,6 +180,17 @@ body {
     .yahts-section {
       max-width: 768px;
       padding: 0 32px;
+    }
+
+    .yacht-title {
+      gap: 64px;
+    }
+    .yacht-title .rental-btn {
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: 110%;
+      letter-spacing: -0.81px;
     }
 
     .swiper {
@@ -181,6 +224,9 @@ body {
 @media only screen and (min-width: 1280px) {
   .yahts-section {
     max-width: 1216px;
+  }
+  .yacht-title {
+    padding: 0 199px;
   }
 
   .swiper-container {
