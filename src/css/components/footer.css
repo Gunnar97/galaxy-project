@@ -1,0 +1,137 @@
+.footer {
+  padding-bottom: 14px;
+}
+
+.footer-wrapper {
+  padding-top: 27px;
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid rgba(246, 245, 239, 0.2);
+}
+
+.footer-navigation {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.footer-socials {
+  margin-bottom: 40px;
+}
+
+.footer-socials-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 110%;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.footer-socials-list {
+  display: flex;
+  gap: 14px;
+}
+
+.footer-social-link {
+  background-color: transparent;
+  width: 32px;
+  height: 32px;
+  border: 1px solid rgba(246, 245, 239, 0.5);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo-link {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  line-height: 114%;
+  letter-spacing: 0.42px;
+  margin-bottom: 40px;
+}
+
+.footer-logo-icon {
+  margin-right: 8px;
+  width: 16px;
+  height: 18px;
+  background-color: red;
+}
+
+.footer-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 118%;
+  letter-spacing: 0.42px;
+}
+
+.copyrigth-block {
+  display: flex;
+  gap: 14px;
+  color: rgba(246, 245, 239, 0.5);
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.36px;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+  .footer-wrapper {
+    padding-top: 64px;
+  }
+  .footer-wrapper {
+    flex-direction: row;
+  }
+  .footer-navigation {
+    flex-direction: row;
+    width: 100%;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    align-items: flex-start;
+    margin-bottom: 100px;
+  }
+  .footer-logo-link {
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 118%;
+    letter-spacing: 0.54px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    margin-right: 150px;
+  }
+  .footer-nav-list {
+    gap: 24px;
+  }
+  .footer-logo-icon {
+    width: 20px;
+    height: 23px;
+  }
+  .copyrigth-block {
+    gap: 32px;
+    font-size: 14px;
+    letter-spacing: 0.42px;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1280px) {
+  .footer-logo-link {
+    margin-right: 337px;
+  }
+  .footer-nav-list {
+    flex-direction: row;
+  }
+  .footer-socials {
+    margin-bottom: 132px;
+  }  
+}

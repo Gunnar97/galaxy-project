@@ -1,9 +1,11 @@
 :root {
     --text-color: #F6F5EF;
+    --reviews-card-text:rgba(246, 245, 239, 0.5);
     --background-color: #11131F;
     --yachtblock-cards-background-: #1F212D;
     --button-light-background: #93ABAE;
-    --title-green-part: linear (#BEC7C2, #A1B5BA);
+    --title-green-part-linear-1:#BEC7C2;
+    --title-green-part-linear-2:#A1B5BA;
     --linear-green: linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%);
     --hero-image-text: #11131F;
     --reviews-card-paragraf-text: #F6F5EF80;
