@@ -1,0 +1,87 @@
+.modal-rent {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 335px;
+    height: 396px;
+    background: var(--yachtblock-cards-background);
+    border-radius: 20px;
+    padding: 40px 24px;
+    outline: 1px solid red;
+}
+
+.modal-rent-btn{
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    padding: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background: var(--yachtblock-cards-background);
+}
+
+
+
+.modal-rent-icon {
+    fill: var(--text-color);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-rent-btn:hover .modal-rent-icon,
+.modal-rent-btn:focus .modal-rent-icon {
+    fill: var(--text-color);
+}
+
+/* .modal-rent.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+} */
+
+.modal-rent-picture{
+    margin-bottom: 24px;
+}
+
+.modal-rent-strong-text { 
+    margin-bottom: 14px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 120%;
+    letter-spacing: -0.0625em;
+
+}
+
+.modal-rent-text{
+    font-size: 14px;
+    font-style: normal;
+    line-height: 140%;
+    letter-spacing: -0.0175em;
+}
+
+@media only screen and (min-width: 768px) {
+    .modal-rent {
+         width: 570px;
+         height: 522px;
+        border-radius: 40px;
+        padding-top: 97px;
+        padding-right: 64px;
+        padding-bottom: 64px;
+        padding-left: 64px;
+    }
+    .modal-rent-picture {
+        margin-left: auto;
+        margin-right: auto;
+         margin-bottom: 21px;
+    }
+    .modal-rent-strong-text { 
+        margin-bottom: 16px;
+        font-size: 32px;
+        letter-spacing: -0.09em;
+    }
+    .modal-rent-text {
+        font-size: 14px;
+        letter-spacing: -0.02em;
+    }
+}
