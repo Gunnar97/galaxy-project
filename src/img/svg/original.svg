@@ -1,32 +1,13 @@
 <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <defs>
+<symbol id="icon-reviews-arrow-up" viewBox="0 0 16 32">
+<path d="M0 9.778l8-9.778 8 9.778h-6.614v22.222h-2.771v-22.222h-6.614z"></path>
+</symbol>
 <symbol id="icon-yahts-arrow-left" viewBox="0 0 72 32">
 <path d="M22 0l-22 16 22 16v-13.229h50v-5.543h-50v-13.229z"></path>
 </symbol>
 <symbol id="icon-yahts-arrow-right" viewBox="0 0 72 32">
 <path d="M50 0l22 16-22 16v-13.229h-50v-5.543h50v-13.229z"></path>
-</symbol>
-<symbol id="icon-yahts-arrow-right-border" viewBox="0 0 41 32">
-<path d="M23.556 12.444l4.889 3.556-4.889 3.556v-2.94h-11.111v-1.232h11.111v-2.94z"></path>
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8889" d="M16 0.444h8.889c8.591 0 15.556 6.964 15.556 15.556s-6.964 15.556-15.556 15.556h-8.889c-8.591 0-15.556-6.964-15.556-15.556s6.964-15.556 15.556-15.556z"></path>
-</symbol>
-<symbol id="icon-yahts-arrow-left-border" viewBox="0 0 41 32">
-<path d="M17.333 12.444l-4.889 3.556 4.889 3.556v-2.94h11.111v-1.232h-11.111v-2.94z"></path>
-<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="0.8889" d="M16 0.444h8.889c8.591 0 15.556 6.964 15.556 15.556s-6.964 15.556-15.556 15.556h-8.889c-8.591 0-15.556-6.964-15.556-15.556s6.964-15.556 15.556-15.556z"></path>
-</symbol>
-<symbol id="icon-reviews-ellipse-3" viewBox="0 0 32 32">
-<path d="M23.579 14.316c0 6.046-4.901 10.947-10.947 10.947s-10.947-4.901-10.947-10.947c0-6.046 4.901-10.947 10.947-10.947s10.947 4.901 10.947 10.947z"></path>
-</symbol>
-<symbol id="icon-reviews-ellipse-2" viewBox="0 0 32 32">
-<path d="M23.579 14.316c0 6.046-4.901 10.947-10.947 10.947s-10.947-4.901-10.947-10.947c0-6.046 4.901-10.947 10.947-10.947s10.947 4.901 10.947 10.947z"></path>
-</symbol>
-<symbol id="icon-reviews-arrow-up" viewBox="0 0 32 32">
-<path fill="#93abae" style="fill: var(--color1, #93abae)" d="M5.818 0h20.364c3.213 0 5.818 2.605 5.818 5.818v20.364c0 3.213-2.605 5.818-5.818 5.818h-20.364c-3.213 0-5.818-2.605-5.818-5.818v-20.364c0-3.213 2.605-5.818 5.818-5.818z"></path>
-<path fill="#f6f5ef" style="fill: var(--color2, #f6f5ef)" d="M13.091 13.737l2.909-3.556 2.909 3.556h-2.405v8.081h-1.008v-8.081h-2.405z"></path>
-</symbol>
-<symbol id="icon-reviews-ellipse-1" viewBox="0 0 32 32">
-<path fill="#88b3b9" style="fill: var(--color3, #88b3b9)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
-<path fill="none" stroke="#93abae" style="stroke: var(--color1, #93abae)" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="2.4615" d="M30.769 16c0 8.157-6.612 14.769-14.769 14.769s-14.769-6.612-14.769-14.769c0-8.157 6.612-14.769 14.769-14.769s14.769 6.612 14.769 14.769z"></path>
 </symbol>
 <symbol id="icon-footer-youtube" viewBox="0 0 32 32">
 <path d="M20.532 10.5c-0.748-0.044-2.288-0.088-4.62-0.088h-0.308c-2.244 0-3.74 0.044-4.488 0.132-1.012 0.088-1.716 0.352-2.112 0.704-0.352 0.308-0.616 0.88-0.704 1.628-0.044 0.484-0.088 1.496-0.088 3.036v0.22c0 1.452 0.044 2.464 0.132 2.948 0.132 0.704 0.352 1.232 0.792 1.54 0.44 0.352 1.188 0.572 2.244 0.66 0.748 0.044 2.288 0.088 4.62 0.088h0.308c2.244 0 3.74-0.044 4.488-0.132 1.012-0.088 1.716-0.352 2.112-0.704 0.352-0.308 0.616-0.88 0.704-1.628 0.044-0.484 0.088-1.496 0.088-3.036v-0.22c0-1.452-0.044-2.464-0.132-2.948-0.132-0.704-0.352-1.232-0.792-1.54-0.44-0.352-1.188-0.572-2.244-0.66zM18.816 15.912l-4.84 2.904v-5.808l4.84 2.904z"></path>
