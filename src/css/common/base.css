@@ -25,6 +25,14 @@
   --items: 3;
 }
 body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4;
+    letter-spacing: -0.02em;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'DM Sans', sans-serif;
