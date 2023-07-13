@@ -1,6 +1,4 @@
-'use strict';
-
-const swiper = new Swiper('.swiper', {
+export const swiper = new Swiper('.swiper', {
   // Optional parameters
   // direction: "horizontal", // "horizontal", "vertical"
   // speed: 600, // швидкість перемикання слайду
