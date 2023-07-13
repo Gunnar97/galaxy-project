@@ -1,5 +1,6 @@
 .yahts-section {
   /* box-sizing: border-box; */
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 80px;
@@ -23,6 +24,8 @@
 }
 
 .yacht-title {
+  /* outline: 1px solid tomato; */
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -270,6 +273,33 @@
   .section-title {
     font-size: 100px;
     max-width: 442px;
+  }
+
+  .background-figure-big {
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.6000000238418579;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -1;
+    left: 20%;
+    /* transform: translate(30%, 0%); */
+  }
+  .background-figure-small {
+    position: absolute;
+    width: 316px;
+    height: 316px;
+    transform: rotate(-45.074deg);
+    border-radius: 316px;
+    opacity: 0.30000001192092896;
+    background: #a6a9b2;
+    filter: blur(100px);
+    z-index: -1;
+    left: 70%;
+    /* transform: translate(70%, 0%); */
   }
 
   .slider-container {
