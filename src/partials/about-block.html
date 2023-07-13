@@ -1,6 +1,6 @@
-<section class="about-sestion section">
+<section class="about-section section">
   <div class="about-container container">
-    <h2 class="visually-hidden">About Blok</h2>
+    <h2 class="visually-hidden">About Block</h2>
 
     <h3 class="about-title">
       <span class="about-title-color"> Yaht Adventures </span>
@@ -28,8 +28,9 @@
     </ul>
 
     <ul class="about-list-img">
-      <li class="about-item-img">
-        <picture>
+      <li class="about-item-img first-img">
+        <div class="item-img-wrapper">
+          <picture>
           <!-- Desktop -->
           <source
             media="(min-width: 1280px)"
@@ -44,7 +45,7 @@
             type="image/png"
           />
 
-          <!-- Mobail -->
+          <!-- Mobile -->
           <source
             media="(max-width: 767px)"
             srcset="../img/about/@1x-img1-mob.png 1x, ../img/about/@2x-img1-mob.png 2x"
@@ -52,7 +53,7 @@
           />
 
           <img
-            src="../img/about/@1x-img1-mob.png"
+            src="../img/about/@1x-img1-tab.png"
             alt="Yacht deck with a view"
             width="704"
             height="631"
@@ -60,10 +61,12 @@
             class="img about-img"
           />
         </picture>
+        </div>
       </li>
 
-      <li class="about-item-img">
-        <picture>
+      <li class="about-item-img second-img">
+        <div class="item-img-wrapper">
+          <picture>
           <!-- Desktop -->
           <source
             media="(min-width: 1280px)"
@@ -78,7 +81,7 @@
             type="image/png"
           />
 
-          <!-- Mobail -->
+          <!-- Mobile -->
           <source
             media="(max-width: 767px)"
             srcset="../img/about/@1x-img2-mob.png 1x, ../img/about/@2x-img2-mob.png 2x"
@@ -94,41 +97,43 @@
             class="img about-img"
           />
         </picture>
+        </div>
       </li>
 
-      <li class="about-item-img">
-        <picture>
-          <!-- Desktop -->
-          <source
-            media="(min-width: 1280px)"
-            srcset="../img/about/@1x-img3-desk.png 1x, ../img/about/@2x-img3-desk.png 2x"
-            type="image/png"
-          />
+      <li class="about-item-img last-img">
+        <div class="item-img-wrapper">
+          <picture>
+            <!-- Desktop -->
+            <source
+              media="(min-width: 1280px)"
+              srcset="../img/about/@1x-img3-desk.png 1x, ../img/about/@2x-img3-desk.png 2x"
+              type="image/png"
+            />
 
-          <!-- Tablet -->
-          <source
-            media="(min-width: 768px)"
-            srcset="../img/about/@1x-img3-tab.png 1x, ../img/about/@2x-img3-tab.png 2x"
-            type="image/png"
-          />
+            <!-- Tablet -->
+            <source
+              media="(min-width: 768px)"
+              srcset="../img/about/@1x-img3-tab.png 1x, ../img/about/@2x-img3-tab.png 2x"
+              type="image/png"
+            />
 
-          <!-- Mobail -->
-          <source
-            media="(max-width: 767px)"
-            srcset="../img/about/@1x-img3-mob.png 1x, ../img/about/@2x-img3-mob.png 2x"
-            type="image/png"
-          />
+            <!-- Mobile -->
+            <source
+              media="(max-width: 767px)"
+              srcset="../img/about/@1x-img3-mob.png 1x, ../img/about/@2x-img3-mob.png 2x"
+              type="image/png"
+            />
 
-          <img
-            src="../img//about/@1x-img3-mob.png"
-            alt="Yacht"
-            class="about-img"
-            width="260"
-            height="244"
-            loading="lazy"
-            class="img about-img"
-          />
-        </picture>
+            <img
+              src="../img/about/@1x-img3-mob.png"
+              alt="Yacht"
+              width="260"
+              height="244"
+              loading="lazy"
+              class="img about-img"
+            />
+          </picture>
+        </div>
       </li>
     </ul>
   </div>
