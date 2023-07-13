@@ -10,6 +10,56 @@
     outline: 1px solid red;
 }
 
+.rent-modal-container{
+    width: 335px;
+    height: 396px;
+    position: relative;
+    
+}
+
+
+.modal-rent-background-circle {
+    width: 142px;
+    height: 142px;
+    transform: rotate(-45.074deg);
+    border-radius: 323px;
+    opacity: 0.6000000238418579;
+    background: #91AFBA;;
+    filter: blur(100px);
+    position: absolute;
+    z-index: -1;
+    top: 10%;
+    right: 50%;
+    transform: translate(50%);
+    
+}
+
+/* Tablet devices */
+@media screen and (min-width: 768px) {
+    .services-background-circle {
+        width: 414px;
+        height: 414px;
+        transform: rotate(-44.094deg);
+        transform: translateX(-50%);
+        border-radius: 414px;
+        top: 620px;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    .services-background-circle {
+        transform: rotate(-45.074deg);
+        top: 320px;
+        transform: translateX(-55%);
+    }
+}
+
+
+
+
+
+
+
 .modal-rent-btn{
     position: absolute;
     top: 24px;
@@ -74,6 +124,14 @@
         padding-bottom: 64px;
         padding-left: 64px;
     }
+
+    .rent-modal-container {
+        width: 570px;
+        height: 522px;
+        position: relative;
+        }
+
+
     .modal-rent-picture {
         margin-left: auto;
         margin-right: auto;
