@@ -1,0 +1,528 @@
+
+/* HERO TEXT */
+
+.hero {
+    display: flex;
+justify-content: center;
+}
+
+.hero-container-text {
+    display: flex;
+    flex-direction: column;
+    
+    margin-top: 40px;
+
+    max-width: 335px;
+    width: 100%;
+}
+
+.hero-title {
+    color: var (--text-color);
+    font-family: DM Sans;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+     line-height: 110%;
+    letter-spacing: -0.045em;
+
+    margin-bottom: 14px;
+
+}
+
+
+.hero-title-color {
+    background: var(--linear-green, linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+
+.hero-about {
+    color: var(--white, #F6F5EF);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+
+    margin-bottom: 24px;
+
+}
+
+/* /HERO TEXT1 */
+
+/* HERO BUTTONS */
+
+.hero-list-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.hero-button {
+    padding: 14px 28px;
+    border-radius: 60px;
+    background: var(--button-light-background);
+
+    color: var(--text-color);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+     line-height: 110%;
+    letter-spacing: -0.02em;
+
+    max-height: 48px;
+}
+
+.hero-anchor-link {
+    border-radius: 60px;
+    border: 1px solid var(--text-color);
+    padding: 11px 28px;
+
+    color: var(--text-color);
+    font-family: DM Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+
+    max-height: 48px;
+}
+
+
+/* /HERO BUTTONS */
+
+.hero-text {
+    color: var(--hero-image-text);
+    font-family: DM Sans;
+    font-style: normal;
+}
+
+.hero-text-clients {
+font-size: 14px;
+font-weight: 700;
+line-height: 110%;
+letter-spacing: -0.02em;
+text-transform: uppercase;
+
+}
+
+.hero-text-amount {
+font-size: 48px;
+font-weight: 400;
+line-height: 110%;
+letter-spacing: -0.045em;
+text-transform: uppercase;
+}
+
+.hero-text-about {
+font-size: 14px;
+font-weight: 400;
+line-height: 140%;
+letter-spacing: -0.02em;
+}
+
+/* HERO VISUAL IMG */
+    
+
+
+
+.hero-bcg-img {
+    
+    border-radius: 40px;
+    width: 100%;
+    max-width: 335px;
+    max-height: 427px;
+
+    position: absolute;
+    z-index: -3;
+
+    left: 0;
+    top: 0;
+}
+
+.hero-container-visual {
+    position: relative;
+
+    width: 100%;
+    max-width: 375px;
+    margin-top: 40px;
+    padding: 24px 24px 48px;
+
+}
+
+.hero-clients {
+    margin-bottom: 52px;
+    
+}
+
+.hero-list-client {
+    display: flex;
+}
+
+.hero-clients-img-1 {
+    z-index: 3;
+}
+
+.hero-clients-img-2 {
+    position: absolute;
+    z-index: 0;
+    left: 61px;
+    z-index: -1;
+}
+
+.hero-clients-img-3 {
+    position: absolute;
+    z-index: -2;
+    left: 99px;
+}
+
+.hero-list-client {
+    margin-bottom: 11px;
+}
+
+
+.hero-yacht-text {
+    display: flex;
+    gap: 14px;
+    align-items: center; 
+}
+
+.hero-yachtowner-img {
+    
+    width: 133px;
+    height: 133px;
+    border-radius: 24px;
+
+    position: absolute;
+    top: 35px;
+    left: 64%;
+}
+
+.hero-yacht-img {
+    width: 287px;
+    height: 167px;
+   
+
+   margin-bottom: 14px;
+}
+
+.hero-clients-img {
+    width: 48px;
+    height: 48px;
+
+}
+
+
+
+
+
+
+/* MOBILE */
+
+@media screen and (min-width: 362px) {
+
+    .container-hero {
+        max-width: 335px;
+    }
+
+
+    .hero-title {
+        max-width: 333x;
+    }
+
+    .hero-about {
+        max-width: 335px;
+    }
+
+.hero-container-visual {
+    margin-bottom: 40px;
+}
+
+
+
+.hero-background-circle2 {
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.8999999761581421;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -5;
+    left: -65%;
+    top: 70%;
+    width: 279px;
+        height: 279px;
+}
+
+.hero-background-circle3 {
+    position: absolute;
+    width: 316px;
+    height: 316px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.30000001192092896;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -5;
+    left: -25%;
+    top: 70%;
+    width: 279px;
+        height: 279px;
+}
+
+}
+
+/* TABLET */
+
+@media screen and (min-width: 768px) {
+    .container-hero {
+        max-width: 704px;
+    }
+
+    .hero-container-text {
+        max-width: 704px;
+    }
+
+.hero-title {
+    font-size: 60px;
+    letter-spacing: -0.045em;
+    margin-bottom: 16px;
+}
+
+.hero-title-color {
+    font-style: italic;
+    
+}
+
+.hero-about {
+        font-size: 16px;
+        letter-spacing: -0.05em;
+        max-width: 539px;
+        margin-bottom: 32px;
+}
+
+
+.hero-button {
+    font-size: 16px;
+    letter-spacing: -0.05em;
+}
+
+
+.hero-anchor-link {
+    font-size: 16px;
+        letter-spacing: -0.05em;
+}
+
+.hero-container-visual {
+    max-width: 426px;
+    padding: 32px 32px 64px;
+}
+
+.hero-text-amount {
+    font-size: 60px;
+    letter-spacing: -0.045em;
+}
+
+.hero-text-about {
+    font-size: 18px;
+    letter-spacing: -0.045em;
+}
+
+.hero-bcg-img {
+    
+    max-width: 426px;
+    max-height: 598px;
+
+    position: absolute;
+    z-index: -3;
+
+    left: 0;
+    top: 0;
+}
+
+.hero-clients {
+    margin-bottom: 111px;
+}
+
+.hero-yachtowner-img {
+    width: 233px;
+    height: 233px;
+    left: 339px;
+}
+
+.hero-yacht-img {
+    width: 378px;
+    height: 221px;
+    margin-bottom: 22px;
+}
+
+.hero-clients-img {
+    width: 56px;
+    height: 56px;
+}
+
+
+
+.hero-clients-img-2 {
+    left: 74px;
+}
+
+.hero-clients-img-3 {
+    left: 117px;
+}
+
+.hero-container-visual {
+    margin-bottom: 36px;
+}
+
+
+.hero-background-circle1 {
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.6000000238418579;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -5;
+    left: -85%;
+    top: 70%;
+}
+
+.hero-background-circle2 {
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.8999999761581421;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -5;
+    left: -26%;
+    top: 85%;
+}
+
+.hero-background-circle3 {
+    position: absolute;
+    width: 316px;
+    height: 316px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.30000001192092896;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -5;
+    left: 10%;
+    top: 70%;
+}
+
+}
+
+
+@media screen and (min-width: 1280px) {
+  
+  .hero {
+    width: 1216px;
+    justify-content: normal;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+
+.container-hero {
+    position: relative;
+}
+
+.hero-container-visual {
+    margin-top: 64px;
+    margin-bottom: 100px;
+
+    height: 598px;
+}
+
+.hero-container-text {
+    position: absolute;
+    left: 662px;
+    width: 554px;
+    top: 68px;
+}
+
+.hero-anchor-link {
+    font-size: 18px;
+}
+
+.hero-button {
+    font-size: 18px;
+}
+
+
+.hero-anchor-link:hover,
+.hero-anchor-link:focus {
+    color: var(--button-light-background);
+    border-color: var(--button-light-background);
+ 
+}
+
+.hero-button:hover,
+.hero-button:focus {
+    background-color: #88B3B9;
+}
+
+
+.hero-yachtowner-img {
+    left: 305px;
+}
+
+
+.hero-background-circle1 {
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.6000000238418579;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -5;
+    left: -65%;
+    top: 30%;
+}
+
+.hero-background-circle2 {
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.8999999761581421;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -5;
+    left: -8%;
+    top: 40%;
+}
+
+.hero-background-circle3 {
+    position: absolute;
+    width: 316px;
+    height: 316px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.30000001192092896;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -5;
+    left: 40%;
+    top: 30%;
+}
+
+}
+
