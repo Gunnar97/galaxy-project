@@ -1,16 +1,5 @@
-/* a:-webkit-any-link {
-	color: inherit;
-  } */
+/* <!-- mobile MODAL --> */
 
-@media screen and (min-width: 375px) {
-	.mobile-modal-container{
-		width: 375px;
-		margin-left: auto;
-		margin-right: auto;
-	}
-
-	
-}
 .mobile-modal{
 	position: fixed;
 	width:100%;	
@@ -19,11 +8,11 @@
 	top: 0;
 	left: 0;
 	
-	background-color: #11131F;
+	background-color: var(--background-color);
 	opacity: 0;
 	visibility: hidden;
 	pointer-events: none;
-	transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
+	transition: opacity  250ms cubic-bezier(0.4, 0, 0.2, 1),visibility 250ms cubic-bezier(0.4, 0, 0.2, 1) ;
 }
 .mobile-modal.is-open{
 	opacity: 1;
@@ -36,48 +25,46 @@
 	padding-right: 20px;
 	padding-top: 28px;
 	padding-bottom: 28px;
-	
 	height: 100%;
 }
 .mobile-modal-wrap{
 	width: 100%;
-	border-bottom: 2px solid #F6F5EF33;
-	padding-bottom: 24;
+	border-bottom: 1px solid rgba(246, 245, 239, 0.20);
 }
 
 .mobile-modal-logo-link{
 	position: relative;
-	display: block;
+	display: flex;
+    align-items: center;
 	font-size: 14px;
 	font-weight: 700;
 	line-height: 1.14;
 	letter-spacing:0.03em;
 	text-transform: uppercase;
-	color: #F6F5EF;
-	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-	padding-bottom: 22px;
+	padding-bottom: 24px;
 
 }
-.mobile-modal-logo-link> img{
-	display: inline-block;
+.modal-logo{
+    margin-right: 8px;
+    width: 16px;
+    height: 18px;
+    background-color: red;
 }
+
 .mobile-modal-list{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
 	gap: 14px;
-	
 	margin-top: 140px;
 	
 }
 .mobile-modal-item{
-	color: #F6F5EF;
-	font-family: DM Sans;
+	
 	font-size: 14px;
-	font-style: normal;
 	font-weight: 700;
-	line-height: 118%; /* 16.52px */
+	line-height: 118%; 
 	letter-spacing: 0.03em;
 	text-transform: uppercase;
 }
@@ -88,9 +75,9 @@
 	right: 20px;
 	cursor: pointer;	
 	
-	opacity: 0.10000000149011612;
-	color: #F6F5EF;
-	
+	/* opacity: 0.10000000149011612; */
+	color: var(--text-color);
+	background-color: red;
 	width: 24px;
 	height: 24px;
 	padding: 0;
@@ -98,6 +85,7 @@
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .mobile-modal-btn-icon{
+    
 	fill: currentColor; 
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	padding: 0;
@@ -106,10 +94,9 @@
 	
     width:279px;
     height: 279px;
-    transform: rotate(-44.916deg);
     border-radius: 279px;
     opacity: .6000000238418579;
-    background: #91AFBA;
+    background: var(--background-gradient-circles);
     filter: blur(100px);
     position: absolute;
     z-index: -1;
@@ -118,7 +105,6 @@
 }
 .circle-last{
 	bottom: 0;
-	
 	transform: translate(45%, 45%);
 }
 
