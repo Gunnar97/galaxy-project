@@ -10,6 +10,8 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  margin-bottom: 40px;
+  position: relative;
 }
 
 .rent-title {
@@ -19,6 +21,25 @@
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
+}
+
+.rent-background-circle {
+  position: absolute;
+  width: 414px;
+  height: 414px;
+  transform: rotate(-45.074deg);
+  border-radius: 414px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(100px);
+  left: 726px;
+  top: 0;
+  z-index: -1;
+}
+.rent-card-img {
+  width: 100%;
+  max-width: 259px;
+  max-height: 187px;
 }
 
 /* form */
@@ -127,8 +148,14 @@ input {
   border-color: rgba(147, 171, 174, 1);
   color: var(--light-green, #93abae);
 }
+
+.rent-btn:hover .rent-icon,
+.rent-btn:focus .rent-icon {
+  fill: #93abae;
+}
 .rent-icon {
   margin-left: 16px;
+  fill: rgba(246, 245, 239, 1);
 }
 
 @media only screen and (min-width: 375px) {
@@ -155,6 +182,7 @@ input {
   .title-img {
     width: 259px;
     gap: 32px;
+    margin-bottom: 0px;
   }
 
   .rent-title {
@@ -182,6 +210,11 @@ input {
   .rent-btn {
     font-size: 18px;
   }
+
+  .rent-card-img {
+    max-width: 259px;
+    max-height: 187px;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -204,5 +237,9 @@ input {
 
   .rent-textarea {
     margin-bottom: 64px;
+  }
+
+  .rent-card-img {
+    max-width: 282px;
   }
 }
