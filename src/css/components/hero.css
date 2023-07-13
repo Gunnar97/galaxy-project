@@ -164,22 +164,7 @@ letter-spacing: -0.02em;
     display: flex;
 }
 
-.hero-clients-img-1 {
-    z-index: 3;
-}
 
-.hero-clients-img-2 {
-    position: absolute;
-    z-index: 0;
-    left: 61px;
-    z-index: -1;
-}
-
-.hero-clients-img-3 {
-    position: absolute;
-    z-index: -2;
-    left: 99px;
-}
 
 .hero-list-client {
     margin-bottom: 11px;
@@ -210,6 +195,8 @@ letter-spacing: -0.02em;
 
    margin-bottom: 14px;
 }
+
+
 
 .hero-clients-img {
     width: 48px;
@@ -247,8 +234,6 @@ letter-spacing: -0.02em;
 
 .hero-background-circle2 {
     position: absolute;
-    width: 414px;
-    height: 414px;
     transform: rotate(-45.074deg);
     border-radius: 414px;
     opacity: 0.8999999761581421;
@@ -263,8 +248,6 @@ letter-spacing: -0.02em;
 
 .hero-background-circle3 {
     position: absolute;
-    width: 316px;
-    height: 316px;
     transform: rotate(-45.074deg);
     border-radius: 414px;
     opacity: 0.30000001192092896;
@@ -274,9 +257,28 @@ letter-spacing: -0.02em;
     left: -25%;
     top: 70%;
     width: 279px;
-        height: 279px;
+    height: 279px;
 }
 
+}
+
+@media screen and (min-width: 362px) and (max-width: 1280px) {
+.hero-clients-img-1 {
+    z-index: 3;
+}
+
+.hero-clients-img-2 {
+    position: absolute;
+    z-index: 0;
+    left: 61px;
+    z-index: -1;
+}
+
+.hero-clients-img-3 {
+    position: absolute;
+    z-index: -2;
+    left: 99px;
+} 
 }
 
 /* TABLET */
@@ -370,13 +372,6 @@ letter-spacing: -0.02em;
 
 
 
-.hero-clients-img-2 {
-    left: 74px;
-}
-
-.hero-clients-img-3 {
-    left: 117px;
-}
 
 .hero-container-visual {
     margin-bottom: 36px;
@@ -425,6 +420,16 @@ letter-spacing: -0.02em;
     top: 70%;
 }
 
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+.hero-clients-img-2 {
+    left: 74px;
+}
+
+.hero-clients-img-3 {
+    left: 117px;
+} 
 }
 
 
@@ -524,5 +529,35 @@ letter-spacing: -0.02em;
     top: 30%;
 }
 
+
+.hero-list-client {
+    display: grid;
+    grid-template-columns: repeat(3, 3rem);
 }
+
+.hero-list-anim {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    transition: transform 300ms;
+}
+
+.hero-list-anim:hover~.hero-list-item {
+    transform: translateX(3rem);
+}
+
+
+.hero-yacht-img,
+.hero-yachtowner-img {
+    transition: all .2s ease-in-out;
+}
+
+.hero-yacht-img:hover,
+.hero-yachtowner-img:hover {
+    transform: scale(1.1);
+
+}
+
+}
+
 
