@@ -127,8 +127,14 @@ input {
   border-color: rgba(147, 171, 174, 1);
   color: var(--light-green, #93abae);
 }
+
+.rent-btn:hover .rent-icon,
+.rent-btn:focus .rent-icon {
+  fill: #93abae;
+}
 .rent-icon {
   margin-left: 16px;
+  fill: rgba(246, 245, 239, 1);
 }
 
 @media only screen and (min-width: 375px) {
