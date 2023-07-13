@@ -38,6 +38,22 @@
   letter-spacing: -1.62px;
 }
 
+.background-figure-big {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6000000238418579;
+  background: var(--background-gradient-circles);
+  filter: blur(100px);
+  z-index: -1;
+}
+.background-figure-small {
+  position: absolute;
+  opacity: 0.30000001192092896;
+  background: var(--background-gradient-circles-small);
+  filter: blur(100px);
+  z-index: 1;
+}
+
 .yacht-title .rental-btn {
   width: max-content;
   padding: 14px 28px;
@@ -78,19 +94,15 @@
 
 .swiper-button-prev,
 .swiper-button-next {
-  /* position: static; */
-  /* top: 0; */
-  /* bottom: 100%; */
   width: 46px;
-  /* height: 50px; */
-  border-radius: 50%;
-  border: none;
+  height: 36px;
+  border: 1px solid var(--text-color);
+  border-radius: 60px;
   padding: 14px;
-  background-color: lightskyblue;
+  fill: var(--text-color);
 }
 
 .swiper-button-prev {
-  /* left: 10%; */
   top: 100%;
   left: calc(50% - 60px);
   transform: translateY(-55%);
@@ -205,25 +217,58 @@
     max-width: 310px;
   }
 
+  .background-figure-big {
+    width: 255px;
+    height: 255px;
+    transform: rotate(-44.916deg);
+    left: -10%;
+    top: -20%;
+  }
+  .background-figure-small {
+    width: 195px;
+    height: 195px;
+    transform: rotate(-44.916deg);
+    left: 40%;
+  }
+
   .card-title,
   .card-data {
     padding: 0 6px;
   }
 
   .swiper-card img {
+    width: 299px;
     height: 251px;
   }
 }
 @media only screen and (min-width: 768px) {
   .slider-container {
     width: 704px;
+    height: 576px;
     margin: 0 auto;
+    /* outline: 1px solid tomato; */
   }
 
   .swiper-container {
     margin: 0;
     width: 704px;
     padding: 0;
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    width: 50px;
+  }
+
+  .swiper-button-prev {
+    /* top: 0%; */
+    /* left: 0; */
+    transform: translateY(-50%);
+  }
+  .swiper-button-next {
+    top: 100%;
+    /* right: 0; */
+    transform: translateY(-50%);
   }
 
   .section-title {
@@ -242,6 +287,20 @@
     font-size: 70px;
     max-width: 641px;
   }
+  .background-figure-big {
+    width: 304px;
+    height: 304px;
+    transform: rotate(-44.094deg);
+    top: 0;
+    left: 10%;
+  }
+  .background-figure-small {
+    width: 316px;
+    height: 316px;
+    transform: rotate(-45.074deg);
+    left: 60%;
+  }
+
   .yacht-title .rental-btn {
     font-size: 18px;
     font-style: normal;
@@ -256,6 +315,7 @@
   }
 
   .swiper-card img {
+    width: 312px;
     height: 268px;
   }
 
@@ -297,13 +357,15 @@
     opacity: 0.30000001192092896;
     background: #a6a9b2;
     filter: blur(100px);
-    z-index: -1;
+    z-index: 1;
     left: 70%;
   }
 
   .slider-container {
     width: 1216px;
     margin: 0 auto;
+    height: 508px;
+    outline: 1px solid tomato;
   }
   .yacht-title {
     margin: 0 auto;
@@ -333,6 +395,19 @@
     letter-spacing: 0.42px;
   }
 
+  .swiper-button-prev {
+    /* left: 10%; */
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+  .swiper-button-next {
+    /* right: 10%; */
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
   .section-title {
     max-width: 882px;
     font-size: 100px;
@@ -344,6 +419,19 @@
 
   .yahts-section {
     gap: 164px;
+  }
+
+  .yacht-bg-wrapper {
+    position: absolute;
+    opacity: 0.2;
+    /* outline: 1px solid tomato; */
+    width: 1508.573px;
+    height: 1611.22px;
+    transform: rotate(101.767deg) translate(63px, -47px);
+    background-image: url('../../img/yachts-block/background/bg-lines-zero-degrees.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    z-index: -2;
   }
 
   .swiper-container {
