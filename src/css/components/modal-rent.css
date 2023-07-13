@@ -19,6 +19,10 @@
     height: 24px;
     border: none;
     background: var(--yachtblock-cards-background);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/bgr/hero-bgr.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
 }
 
 
