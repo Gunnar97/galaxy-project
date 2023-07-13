@@ -228,3 +228,18 @@ input {
     max-width: 282px;
   }
 }
+
+.rent-background-circle {
+  position: absolute;
+  width: 414px;
+  height: 414px;
+  transform: rotate(-45.074deg);
+  border-radius: 414px;
+  opacity: 0.8999999761581421;
+  background: #91afba;
+  filter: blur(100px);
+  left: -65%;
+  top: 70%;
+  width: 279px;
+  height: 279px;
+}
