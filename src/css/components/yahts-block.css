@@ -1,3 +1,9 @@
+/*
+│ =========================
+│      Yacht-section
+│ =========================
+*/
+
 .yahts-section {
   /* box-sizing: border-box; */
   position: relative;
@@ -54,7 +60,7 @@
   z-index: 1;
 }
 
-.yacht-title .rental-btn {
+.yacht-title .to-rental-btn {
   width: max-content;
   padding: 14px 28px;
   font-size: 14px;
@@ -64,6 +70,19 @@
   letter-spacing: -0.63px;
   border-radius: 60px;
   border: 1px solid var(--text-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.yacht-title .to-rental-btn:hover,
+.yacht-title .to-rental-btn:focus,
+.swiper-button-prev:hover,
+.swiper-button-next:hover,
+.swiper-button-prev:focus,
+.swiper-button-next:focus {
+  color: var(--button-light-background);
+  fill: var(--button-light-background);
+
+  border-color: var(--linear-green);
 }
 
 /*
@@ -71,6 +90,7 @@
 │           SLIDER
 │ =========================
 */
+/* #region Slider */
 .slider-container {
   position: relative;
   width: 375px;
@@ -100,6 +120,9 @@
   border-radius: 60px;
   padding: 14px;
   fill: var(--text-color);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .swiper-button-prev {
@@ -119,6 +142,13 @@
   content: '';
   display: none;
 }
+
+.prev-icon,
+.next-icon {
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 /*
 │ =========================
 │    Swiper card styling
@@ -200,7 +230,7 @@
   text-transform: uppercase;
   text-align: right;
 }
-
+/* #endregion Slider */
 /*
 │ =========================
 │          Media
