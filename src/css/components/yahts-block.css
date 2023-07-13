@@ -1,67 +1,118 @@
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.slide {
-  width: 200px;
-}
 .yahts-section {
   /* box-sizing: border-box; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 
   margin: 0 auto;
-  padding: 0 20px;
-  outline: 1px solid tomato;
+
+  /* outline: 1px solid tomato; */
+}
+
+.section-title {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+  font-size: 36px;
+  max-width: 310px;
 }
 
 .yacht-title {
+  /* outline: 1px solid tomato; */
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 40px;
-  margin-bottom: 80px;
+
+  font-family: DM Sans;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 110%;
+  letter-spacing: -1.62px;
+}
+
+.yacht-title .rental-btn {
+  width: max-content;
+  padding: 14px 28px;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 110%;
+  letter-spacing: -0.63px;
+  border-radius: 60px;
+  border: 1px solid var(--text-color);
+}
+
+/*
+│ =========================
+│           SLIDER
+│ =========================
+*/
+.slider-container {
+  position: relative;
+  width: 375px;
+  height: 529px;
+  margin: 0 auto;
+  padding: 0;
+  /* outline: 1px solid tomato; */
 }
 
 .swiper-container {
-  /* max-width: 375px; */
+  position: relative;
+  margin: 0 auto;
+  padding: 0;
+  width: 335px;
+  height: 469px;
 }
 
 .swiper {
-  width: 100%;
-
-  height: 569px;
-  /* outline: 2px solid green; */
-}
-.swiper-slide {
-}
-
-.swiper-button-next {
-  top: 90%;
-  right: 40%;
-  transform: translateX(50%);
-}
-.swiper-button-prev {
-  top: 90%;
-  left: 40%;
-  transform: translateX(-50%);
+  width: auto;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  background-color: lightgreen;
-  position: absolute;
+  /* position: static; */
+  /* top: 0; */
+  /* bottom: 100%; */
+  width: 46px;
+  /* height: 50px; */
   border-radius: 50%;
+  border: none;
+  padding: 14px;
+  background-color: lightskyblue;
+}
+
+.swiper-button-prev {
+  /* left: 10%; */
+  top: 100%;
+  left: calc(50% - 60px);
+  transform: translateY(-55%);
+}
+.swiper-button-next {
+  /* right: 10%; */
+  top: 100%;
+  right: calc(50% - 60px);
+  transform: translateY(-55%);
 }
 
 .swiper-button-prev::after,
 .swiper-button-next::after {
+  content: '';
   display: none;
 }
-
-.swiper-card {
-  background-color: #fff;
-}
-
-.card {
+/*
+│ =========================
+│    Swiper card styling
+│ =========================
+*/
+.swiper-slide .swiper-card {
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
@@ -71,151 +122,233 @@ body {
   margin: 0 auto;
   padding: 18px 18px 24px;
 
-  color: #f6f5ef;
-  /* outline: 1px solid tomato; */
-  background-color: #1f212d;
+  border-radius: 29px;
+  color: var(--text-color);
+  background-color: var(--yachtblock-cards-background-);
 }
 
-.card,
-.card img {
-  border-radius: 28px;
-}
-
-.card img {
-  display: block;
-  max-width: 100%;
-  height: 251px;
-}
-
-.card-description {
-  display: flex;
-  flex-direction: column;
-  padding-left: 6px;
-
-  gap: 25px;
-  max-width: 287px;
+.swiper-slide .swiper-card img {
+  border-radius: 29px;
 }
 
 .card-title {
+  font-family: DM Sans;
   box-sizing: border-box;
   width: 100%;
-  /* padding-left: 6px; */
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .card-data {
+  font-family: DM Sans;
   display: flex;
   gap: 32px;
-  /* padding-left: 6px; */
+}
+
+.card-info {
+  width: max-content;
 }
 .parametrs,
 .info {
   display: flex;
   flex-direction: column;
+  width: fit-content;
   gap: 6px;
 }
 
+.card-info,
+.card-parametr {
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.42px;
+}
+
+.title-name {
+  text-transform: uppercase;
+  text-overflow: ellipsis;
+  font-family: DM Sans;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  letter-spacing: -0.72px;
+  text-transform: uppercase;
+}
+
 .title-type {
+  font-family: DM Sans;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 118%;
+  letter-spacing: 0.36px;
+  text-transform: uppercase;
   text-align: right;
 }
 
+/*
+│ =========================
+│          Media
+│ =========================
+*/
+
 @media only screen and (min-width: 375px) {
-  .yahts-section {
-    max-width: 375px;
-  }
-
   .swiper-container {
-    width: 100%;
-    outline: 1px solid tomato;
+    padding: 0;
   }
 
-  .swiper {
-    width: 100%;
-    max-width: 335px;
+  .section-title {
+    font-size: 36px;
+    max-width: 310px;
   }
 
-  .card {
-    width: 100%;
-    max-width: 335px;
+  .card-title,
+  .card-data {
+    padding: 0 6px;
   }
 
-  .card-description {
-    max-width: 287px;
-  }
-
-  @media only screen and (min-width: 768px) {
-    .yahts-section {
-      max-width: 768px;
-      padding: 0 32px;
-    }
-
-    .swiper {
-      width: 100%;
-      max-width: 704px;
-    }
-
-    .swiper-button-next {
-      top: 100%;
-      right: 294px;
-      transform: translateY(-50%);
-      border-radius: 50%;
-    }
-    .swiper-button-prev {
-      top: 100%;
-      left: 294px;
-      transform: translateY(-50%);
-    }
-
-    .card {
-      max-width: 344px;
-      padding: 16px 16px 32px;
-    }
-
-    .card-description {
-      max-width: 280px;
-      padding-left: 16px;
-    }
+  .swiper-card img {
+    height: 251px;
   }
 }
-@media only screen and (min-width: 1280px) {
-  .yahts-section {
-    max-width: 1216px;
+@media only screen and (min-width: 768px) {
+  .slider-container {
+    width: 704px;
+    margin: 0 auto;
   }
 
   .swiper-container {
-    max-width: 1216px;
-    height: 508px;
+    margin: 0;
+    width: 704px;
+    padding: 0;
   }
 
-  .swiper {
-    width: 100%;
-    max-width: 1216px;
+  .section-title {
+    max-width: 640px;
+  }
+
+  .yahts-section {
+    gap: 100px;
+  }
+
+  .yacht-title {
+    gap: 64px;
+  }
+
+  .section-title {
+    font-size: 70px;
+    max-width: 641px;
+  }
+  .yacht-title .rental-btn {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%;
+    letter-spacing: -0.81px;
   }
 
   .swiper-card {
-    /* width: (calc(100% - 16px * 2) / 3); */
-    width: 354px;
-    padding: 10px;
+    padding: 16px 16px 32px;
+    gap: 32px;
   }
 
-  .swiper-button-next {
-    top: 50%;
-    right: 0;
-    transform: translateX(-50%);
-  }
-  .swiper-button-prev {
-    top: 50%;
-    left: 0;
-    transform: translateX(50%);
+  .swiper-card img {
+    height: 268px;
   }
 
-  .card {
+  .card-title,
+  .card-data {
     width: 100%;
-    /* height: 100%; */
-    max-width: 354px;
+    padding: 0 16px;
   }
-  .card-description {
-    max-width: 290px;
+}
+@media only screen and (min-width: 1280px) {
+  .swiper-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+
+  .section-title {
+    font-size: 100px;
+    max-width: 442px;
+  }
+
+  .background-figure-big {
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.074deg);
+    border-radius: 414px;
+    opacity: 0.6000000238418579;
+    background: #91afba;
+    filter: blur(100px);
+    z-index: -1;
+    left: 20%;
+  }
+  .background-figure-small {
+    position: absolute;
+    width: 316px;
+    height: 316px;
+    transform: rotate(-45.074deg);
+    border-radius: 316px;
+    opacity: 0.30000001192092896;
+    background: #a6a9b2;
+    filter: blur(100px);
+    z-index: -1;
+    left: 70%;
+  }
+
+  .slider-container {
+    width: 1216px;
+    margin: 0 auto;
+  }
+  .yacht-title {
+    margin: 0 auto;
+  }
+
+  .slide-card {
+    justify-content: center;
+  }
+
+  .swiper-card {
+    padding: 16px 16px 32px;
+    gap: 32px;
+  }
+
+  .card-title,
+  .card-data {
+    width: 100%;
+    padding: 0 16px;
+  }
+
+  .card-info,
+  .card-parametr {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 118%;
+    letter-spacing: 0.42px;
+  }
+
+  .section-title {
+    max-width: 882px;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 110%;
+    letter-spacing: -4.5px;
+  }
+
+  .yahts-section {
+    gap: 164px;
+  }
+
+  .swiper-container {
+    margin: 0 auto;
+    width: 1094px;
+    padding: 0;
   }
 }
