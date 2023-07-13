@@ -33,7 +33,13 @@
 
 .header-burger-btn {
   height: 24px;
+  width: 24px;
   background-color: red;
+  color: var(--)
+}
+
+.header-burger-icon {
+  stroke: ;
 }
 
 .header-nav-list {
