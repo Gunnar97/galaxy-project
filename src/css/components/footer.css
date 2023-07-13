@@ -38,11 +38,21 @@
   background-color: transparent;
   width: 32px;
   height: 32px;
-  border: 1px solid rgba(246, 245, 239, 0.5);
+  border: 1px solid var(--reviews-card-text);
   border-radius: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* color: var(--linear-green); */
+}
+
+/* .footer-social-link:hover {
+  border-color: var(--linear-green)
+} */
+
+
+.footer-social-icon {
+  fill: currentColor;
 }
 
 .footer-logo-link {
@@ -59,7 +69,7 @@
   margin-right: 8px;
   width: 16px;
   height: 18px;
-  background-color: red;
+  fill: currentColor;
 }
 
 .footer-nav-list {
@@ -115,6 +125,7 @@
   .footer-logo-icon {
     width: 20px;
     height: 23px;
+    fill: currentColor;
   }
   .copyrigth-block {
     gap: 32px;

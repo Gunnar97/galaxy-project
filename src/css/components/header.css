@@ -2,8 +2,8 @@
   display: flex;
   justify-content: space-between;
   text-align: center;
-  padding-top: 27px;
-  padding-bottom: 27px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   border-bottom: 1px solid rgba(246, 245, 239, 0.2);
 }
 
@@ -28,12 +28,18 @@
   margin-right: 8px;
   width: 16px;
   height: 18px;
-  background-color: red;
+  fill: currentColor;
 }
 
 .header-burger-btn {
   height: 24px;
-  background-color: red;
+  width: 24px;
+  /* background-color: red; */
+  color: var(--text-color)
+}
+
+.header-burger-icon {
+  fill: currentColor;
 }
 
 .header-nav-list {
@@ -63,6 +69,7 @@
   .header-logo-icon {
     width: 20px;
     height: 23px;
+    fill: currentColor;
   }
 }
 
