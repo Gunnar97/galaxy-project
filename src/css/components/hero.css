@@ -1,6 +1,11 @@
 
 /* HERO TEXT */
 
+.hero {
+    display: flex;
+justify-content: center;
+}
+
 .hero-container-text {
     display: flex;
     flex-direction: column;
@@ -18,7 +23,7 @@
     font-style: normal;
     font-weight: 500;
      line-height: 110%;
-    letter-spacing: -1.62px;
+    letter-spacing: -0.045em;
 
     margin-bottom: 14px;
 
@@ -39,7 +44,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    letter-spacing: -0.28px;
+    letter-spacing: -0.02em;
 
     margin-bottom: 24px;
 
@@ -67,7 +72,7 @@
     font-style: normal;
     font-weight: 700;
      line-height: 110%;
-    letter-spacing: -0.63px;
+    letter-spacing: -0.02em;
 
     max-height: 48px;
 }
@@ -83,7 +88,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 110%;
-    letter-spacing: -0.63px;
+    letter-spacing: -0.02em;
 
     max-height: 48px;
 }
@@ -101,7 +106,7 @@
 font-size: 14px;
 font-weight: 700;
 line-height: 110%;
-letter-spacing: 0.56px;
+letter-spacing: -0.02em;
 text-transform: uppercase;
 
 }
@@ -110,7 +115,7 @@ text-transform: uppercase;
 font-size: 48px;
 font-weight: 400;
 line-height: 110%;
-letter-spacing: -2.16px;
+letter-spacing: -0.045em;
 text-transform: uppercase;
 }
 
@@ -118,7 +123,7 @@ text-transform: uppercase;
 font-size: 14px;
 font-weight: 400;
 line-height: 140%;
-letter-spacing: -0.63px;
+letter-spacing: -0.02em;
 }
 
 /* HERO VISUAL IMG */
@@ -127,7 +132,7 @@ letter-spacing: -0.63px;
 
 
 .hero-bcg-img {
-    background-color: #93ABAE;
+    
     border-radius: 40px;
     width: 100%;
     max-width: 335px;
@@ -144,11 +149,8 @@ letter-spacing: -0.63px;
     position: relative;
 
     width: 100%;
-    max-width: 335px;
-
+    max-width: 375px;
     margin-top: 40px;
-    min-height: 427px;
-
     padding: 24px 24px 48px;
 
 }
@@ -212,11 +214,8 @@ letter-spacing: -0.63px;
 .hero-clients-img {
     width: 48px;
     height: 48px;
-    border-radius: 48px;
-    border: 2px solid var(--hero-clients-circles-border);
-    background: url(<path-to-image>), lightgray -13.39px 3.574px / 155.791% 103.873% no-repeat, #E3E3E3;
-}
 
+}
 
 
 
@@ -259,7 +258,7 @@ letter-spacing: -0.63px;
 
 .hero-title {
     font-size: 60px;
-    letter-spacing: -2.7px;
+    letter-spacing: -0.045em;
     margin-bottom: 16px;
 }
 
@@ -270,7 +269,7 @@ letter-spacing: -0.63px;
 
 .hero-about {
         font-size: 16px;
-        letter-spacing: -0.81px;
+        letter-spacing: -0.05em;
         max-width: 539px;
         margin-bottom: 32px;
 }
@@ -278,13 +277,13 @@ letter-spacing: -0.63px;
 
 .hero-button {
     font-size: 16px;
-    letter-spacing: -0.81px;
+    letter-spacing: -0.05em;
 }
 
 
 .hero-anchor-link {
     font-size: 16px;
-        letter-spacing: -0.81px;
+        letter-spacing: -0.05em;
 }
 
 .hero-container-visual {
@@ -294,12 +293,12 @@ letter-spacing: -0.63px;
 
 .hero-text-amount {
     font-size: 60px;
-    letter-spacing: -2.7px;
+    letter-spacing: -0.045em;
 }
 
 .hero-text-about {
     font-size: 18px;
-    letter-spacing: -0.81px;
+    letter-spacing: -0.045em;
 }
 
 .hero-bcg-img {
@@ -353,7 +352,14 @@ letter-spacing: -0.63px;
 
 
 @media screen and (min-width: 1280px) {
-    
+  
+  .hero {
+    width: 1216px;
+    justify-content: normal;
+    margin-left: auto;
+    margin-right: auto;
+  }  
+
 .container-hero {
     position: relative;
 }
