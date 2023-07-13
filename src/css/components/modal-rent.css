@@ -36,23 +36,20 @@
 
 /* Tablet devices */
 @media screen and (min-width: 768px) {
-    .services-background-circle {
-        width: 414px;
-        height: 414px;
-        transform: rotate(-44.094deg);
-        transform: translateX(-50%);
-        border-radius: 414px;
-        top: 620px;
+    .modal-rent-background-circle {
+        width: 265px;
+        height: 265px;
+        top: 10%;
+        right: 30%;
+        transform: rotate(-45.074deg);
+        flex-shrink: 0;
+        border-radius: 265px;
+        opacity: 0.6000000238418579;
+        background: #91AFBA;
+        filter: blur(100px);
     }
 }
 
-@media screen and (min-width: 1280px) {
-    .services-background-circle {
-        transform: rotate(-45.074deg);
-        top: 320px;
-        transform: translateX(-55%);
-    }
-}
 
 
 
@@ -68,11 +65,7 @@
     width: 24px;
     height: 24px;
     border: none;
-    background: var(--yachtblock-cards-background);
-    background-image: linear-gradient(rgba(46, 47, 66, 0.70), rgba(46, 47, 66, 0.70)), url(../images/bgr/hero-bgr.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    
 }
 
 

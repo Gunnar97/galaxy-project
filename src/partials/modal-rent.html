@@ -6,14 +6,33 @@
         <use href="../img/svg/original.svg#icon-modal-close"></use>
       </svg>
     </button>
-    <picture class="modal-rent-picture">
+    <picture>
+      <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ../img/rent-modal/img-yahtmodal-rent-tablres.png,
+          ../img/rent-modal/img-yahtmodal-rent-tabl@2xres.png 2x
+        "
+        type="image/png"
+      />
+      <!-- Mobile screen -->
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ../img/rent-modal/img-yahtmodal-rent-mobres.png,
+          ../img/rent-modal/img-yahtmodal-rent-mob@2xres.png
+        "
+        type="image/png"
+      />
       <img
-        class="modal-rent-imj"
-        src="../img/rent-modal/img yaht.png"
-        alt="yaht"
+        class="card-img"
+        src="../img/rent-modal/img-yahtmodal-rent-mobres.png"
+        alt="Ноутбук"
         width="338"
         height="198"
         loading="lazy"
+        alt="yaht"
       />
     </picture>
 
