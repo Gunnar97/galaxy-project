@@ -24,6 +24,11 @@
   --indent-horizontal: 24px;
   --items: 3;
 }
+
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: var(--background-color);
     color: var(--text-color);

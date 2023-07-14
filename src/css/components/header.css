@@ -28,7 +28,8 @@
   margin-right: 8px;
   width: 16px;
   height: 18px;
-  fill: currentColor;
+  /* fill: currentColor; */
+  fill: url("#linear");
 }
 
 .header-burger-btn {
