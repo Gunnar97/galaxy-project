@@ -78,8 +78,8 @@
               type="text"
               name="user_name"
               required
-              pattern="[a-zA-Zа-яА-ЯїЇєЄіІёЁґҐ'-]+"
-              placeholder=" "
+              pattern="[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}\s[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}"
+              placeholder="Name Surname"
             />
             <span class="user-tag">Full Name</span>
           </label>
@@ -93,7 +93,7 @@
               type="email"
               name="user_email"
               required
-              placeholder=" "
+              placeholder="example@gmail.com"
             />
             <span class="user-tag">Email</span>
           </label>
@@ -107,8 +107,8 @@
               type="tel"
               name="user_phone"
               required
-              pattern="[0-9]{10}"
-              placeholder=" "
+              pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+              placeholder="012 345 6789"
             />
             <span class="user-tag">Phone number</span>
           </label>
@@ -120,7 +120,7 @@
             <textarea
               name="user_comment"
               class="user-massage user-input"
-              placeholder=" "
+              placeholder="Enter your message..."
             ></textarea>
             <span class="user-tag">Comment</span>
           </label>
