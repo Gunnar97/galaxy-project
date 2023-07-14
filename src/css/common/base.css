@@ -42,6 +42,11 @@ body {
   line-height: 1.4;
   letter-spacing: -0.32px;
 }
+
+.page{
+  overflow: hidden;
+}
+
 /* Mobile devices */
 .section {
   padding: 40px 0;
