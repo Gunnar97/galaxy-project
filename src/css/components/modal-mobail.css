@@ -2,8 +2,7 @@
 @media screen and (min-width: 375px) {
 	.mobile-modal-container{
 		width: 375px;
-		margin-left: auto;
-		margin-right: auto;
+		max-height: 812px;
 	}
 }
 .mobile-modal{
@@ -26,15 +25,9 @@
 }
 .mobile-modal-container{
 	position: relative;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-top: 28px;
-	padding-bottom: 28px;
+	padding-top: 27px;
+	padding-bottom: 24px;
 	height: 100%;
-}
-.mobile-modal-wrap{
-	width: 100%;
-	border-bottom: 1px solid rgba(246, 245, 239, 0.20);
 }
 
 .mobile-modal-logo-link{
@@ -46,14 +39,22 @@
 	line-height: 1.14;
 	letter-spacing:0.03em;
 	text-transform: uppercase;
-	padding-bottom: 24px;
+	padding-bottom: 27px;
+	border-bottom: 1px solid rgba(246, 245, 239, 0.20);
 
 }
+/* .footer-social-link:hover {
+    border-color: transparent;
+}
+border-color var(--transition-duration-250) var(--transition-timing-function); */
+
+
 .modal-logo{
     margin-right: 8px;
     width: 16px;
     height: 18px;
-	fill: currentColor;
+	/* fill: currentColor; */
+	fill: url(#linear);
 }
 
 .mobile-modal-list{
@@ -90,8 +91,8 @@
 	transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 .mobile-modal-btn-icon{
-    
-	fill: currentColor; 
+    stroke: currentColor; 
+	/* fill: currentColor;  */
 	transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 	padding: 0;
 }
