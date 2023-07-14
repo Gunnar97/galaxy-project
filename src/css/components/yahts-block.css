@@ -285,6 +285,11 @@
     padding: 0;
   }
 
+  .swiper-slide .swiper-card {
+    padding: 16px 16px 32px;
+    gap: 32px;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     width: 50px;
@@ -395,7 +400,7 @@
     width: 1216px;
     margin: 0 auto;
     height: 508px;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
   }
   .yacht-title {
     margin: 0 auto;
@@ -408,6 +413,11 @@
   .swiper-card {
     padding: 16px 16px 32px;
     gap: 32px;
+  }
+
+  .swiper-card img {
+    width: 322px;
+    height: 268px;
   }
 
   .card-title,
