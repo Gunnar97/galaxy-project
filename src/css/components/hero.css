@@ -578,12 +578,17 @@ letter-spacing: -0.06em;
     transition: all .2s ease-in-out;
 }
 
-.hero-yacht-img:hover,
-.hero-yachtowner-img:hover,
+
 .hero-list-anim:hover {
     transform: scale(1.2);
     filter: drop-shadow(10px 8px 6px #718d92);
     
+}
+
+.hero-yacht-img:hover,
+.hero-yachtowner-img:hover {
+    transform: scale(1.2);
+    filter: drop-shadow(10px 8px 6px #131d1f);
 }
 
 
