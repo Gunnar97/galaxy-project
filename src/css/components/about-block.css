@@ -1,12 +1,6 @@
-.about-section {
-    padding-bottom: 26px;
-}
-
 .about-container {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    object-fit: contain;
 
     width: 100%;
 }
@@ -63,6 +57,7 @@
 @media screen and (min-width: 768px) {
     .about-container {
         width: 768px;
+        flex-wrap: wrap;
     }
 
     .about-title {
