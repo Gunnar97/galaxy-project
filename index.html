@@ -11,8 +11,8 @@
     
 
     <title>Yaht Adventures</title>
-    <script type="module" crossorigin src="/galaxy-project/assets/index-5b2dceb5.js"></script>
-    <link rel="stylesheet" href="/galaxy-project/assets/index-4e0399b1.css">
+    <script type="module" crossorigin src="/galaxy-project/assets/index-36a21a38.js"></script>
+    <link rel="stylesheet" href="/galaxy-project/assets/index-0710a70b.css">
   </head>
   <body>
     <div class="page">
@@ -840,67 +840,51 @@
 </section>
 
 
-        <section class="rent-section section">
+        <section class="rent-section section" id="rent_section">
   <div class="container rent-block">
     <div class="title-img">
-      <h3 class="rent-title">Rent a yaht now</h3>
-      <!-- <div class="rent-background-circle"></div> -->
+      <h2 class="rent-title">Rent a yaht now</h2>
       <!--          picture                     -->
       <picture>
         <!-- Desktop screen -->
         <source
           media="(min-width: 1200px)"
-          srcset="
-            ../img/rent/imgyaht_des@1x.webp 1x,
-            ../img/rent/imgyaht_des@2x.webp 2x
-          "
+          srcset="/galaxy-project/assets/imgyaht_des@1x-491eaa2c.webp 1x, /galaxy-project/assets/imgyaht_des@2x-0428d8e8.webp 2x"
           type="image/webp"
         />
         <source
           media="(min-width: 1200px)"
-          srcset="
-            ../img/rent/imgyaht_des@1x.png 1x,
-            ../img/rent/imgyaht_des@2x.png 2x
-          "
+          srcset="/galaxy-project/assets/imgyaht_des@1x-b3655b74.png 1x, /galaxy-project/assets/imgyaht_des@2x-a4b3c3d9.png 2x"
           type="image/png"
         />
         <!-- Tablet screen -->
         <source
           media="(min-width: 768px)"
-          srcset="
-            ../img/rent/imgyaht_tab@1x.webp 1x,
-            ../img/rent/imgyaht_tab@2x.webp 2x
-          "
+          srcset="/galaxy-project/assets/imgyaht_tab@1x-81094335.webp 1x, /galaxy-project/assets/imgyaht_tab@2x-09696d6c.webp 2x"
           type="image/webp"
         />
         <source
           media="(min-width: 768px)"
-          srcset="
-            ../img/rent/imgyaht_tab@1x.png 1x,
-            ../img/rent/imgyaht_tab@2x.png 2x
-          "
+          srcset="/galaxy-project/assets/imgyaht_tab@1x-e8ca13e7.png 1x, /galaxy-project/assets/imgyaht_tab@2x-f5935924.png 2x"
           type="image/png"
         />
         <!-- Mobile screen -->
         <source
           media="(max-width: 767px)"
-          srcset="
-            ../img/rent/imgyaht_mob@1x.webp 1x,
-            ../img/rent/imgyaht_mob@2x.webp 2x
-          "
+          srcset="/galaxy-project/assets/imgyaht_tab@1x-81094335.webp 1x, /galaxy-project/assets/imgyaht_mob@2x-13b291f2.webp 2x"
           type="image/webp"
         />
         <source
           media="(max-width: 767px)"
           srcset="
-            ../img/rent/imgyaht_mob@1x.png  1x,
-            ../img/rent/imgyaht_mob@2x.png@ 2x
+            ./img/rent/imgyaht_mob@1x.png  1x,
+            ./img/rent/imgyaht_mob@2x.png@ 2x
           "
           type="image/jpg"
         />
         <img
           class="rent-card-img"
-          src="../img/rent/imgyaht_des@2x.webp"
+          src="/galaxy-project/assets/imgyaht_des@2x-0428d8e8.webp"
           alt="A yacht in the middle of the ocean"
           width="282"
           height="191"
@@ -920,8 +904,8 @@
               type="text"
               name="user_name"
               required
-              pattern="[a-zA-Zа-яА-ЯїЇєЄіІёЁґҐ'-]+"
-              placeholder=" "
+              pattern="[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}\s[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}"
+              placeholder="Name Surname"
             />
             <span class="user-tag">Full Name</span>
           </label>
@@ -935,7 +919,7 @@
               type="email"
               name="user_email"
               required
-              placeholder=" "
+              placeholder="example@gmail.com"
             />
             <span class="user-tag">Email</span>
           </label>
@@ -949,8 +933,8 @@
               type="tel"
               name="user_phone"
               required
-              pattern="[0-9]{10}"
-              placeholder=" "
+              pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+              placeholder="012 345 6789"
             />
             <span class="user-tag">Phone number</span>
           </label>
@@ -962,7 +946,7 @@
             <textarea
               name="user_comment"
               class="user-massage user-input"
-              placeholder=" "
+              placeholder="Enter your message..."
             ></textarea>
             <span class="user-tag">Comment</span>
           </label>
@@ -972,7 +956,7 @@
       <button type="submit" class="rent-btn">
         Send
         <svg class="rent-icon" width="18" height="9">
-          <use href="../img/svg/icons.svg#icon-Arrow"></use>
+          <use href="/galaxy-project/assets/icons-1913f09b.svg#icon-rent-arrow"></use>
         </svg>
       </button>
     </form>
