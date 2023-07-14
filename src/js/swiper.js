@@ -35,12 +35,25 @@ const yachtsSlider = new Swiper('#yachts-slider', {
 });
 
 const reviewsSlider = new Swiper('#reviews-slider', {
-  slidesPerView: 1,
-  spaceBetween: 16,
   clickable: true,
+  watchOverflow: true,
 
   modules: [Pagination],
   pagination: {
     el: '.swiper-pagination',
+  },
+
+  breakpoints: {
+    375: {
+      slidesPerView: 1,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
+    },
+    1280: {
+      slidesPerView: 3,
+      spaceBetween: 32,
+    },
   },
 });
