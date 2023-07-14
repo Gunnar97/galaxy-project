@@ -5,18 +5,17 @@
 */
 
 .yahts-section {
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  gap: 80px;
+}
+
+.section-wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 80px;
 
   margin: 0 auto;
-
-  /* outline: 1px solid tomato; */
 }
 
 .section-title {
@@ -285,6 +284,11 @@
     padding: 0;
   }
 
+  .swiper-slide .swiper-card {
+    padding: 16px 16px 32px;
+    gap: 32px;
+  }
+
   .swiper-button-prev,
   .swiper-button-next {
     width: 50px;
@@ -301,11 +305,15 @@
     transform: translateY(-50%);
   }
 
+  .yahts-section {
+    padding: -200px;
+  }
+
   .section-title {
     max-width: 640px;
   }
 
-  .yahts-section {
+  .section-wrapper {
     gap: 100px;
   }
 
@@ -395,7 +403,11 @@
     width: 1216px;
     margin: 0 auto;
     height: 508px;
-    outline: 1px solid tomato;
+    /* outline: 1px solid tomato; */
+  }
+
+  .section-wrapper {
+    gap: 164px;
   }
   .yacht-title {
     margin: 0 auto;
@@ -408,6 +420,11 @@
   .swiper-card {
     padding: 16px 16px 32px;
     gap: 32px;
+  }
+
+  .swiper-card img {
+    width: 322px;
+    height: 268px;
   }
 
   .card-title,
@@ -445,10 +462,6 @@
     font-weight: 500;
     line-height: 110%;
     letter-spacing: -4.5px;
-  }
-
-  .yahts-section {
-    gap: 164px;
   }
 
   .yacht-bg-wrapper {
