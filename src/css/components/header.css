@@ -28,13 +28,12 @@
   margin-right: 8px;
   width: 16px;
   height: 18px;
-  fill: currentColor;
+  fill: url("#linear");
 }
 
 .header-burger-btn {
   height: 24px;
   width: 24px;
-  /* background-color: red; */
   color: var(--text-color)
 }
 

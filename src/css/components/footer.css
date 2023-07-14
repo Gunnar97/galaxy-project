@@ -35,7 +35,8 @@
 }
 
 .footer-social-link {
-  background-color: transparent;
+  background: linear-gradient(#11131F, #11131F) padding-box,
+              linear-gradient(107deg, #BEC7C2 0%, #A1B5BA 100%) border-box;
   width: 32px;
   height: 32px;
   border: 1px solid var(--reviews-card-text);
@@ -43,16 +44,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: var(--linear-green); */
+  transition: border-color var(--transition-duration-250) var(--transition-timing-function);
 }
-
-/* .footer-social-link:hover {
-  border-color: var(--linear-green)
-} */
-
 
 .footer-social-icon {
   fill: currentColor;
+}
+
+.footer-social-link:hover {
+  border-color: transparent;
+}
+.footer-social-link:hover .footer-social-icon {
+  fill: url("#linear");
 }
 
 .footer-logo-link {
@@ -69,7 +72,7 @@
   margin-right: 8px;
   width: 16px;
   height: 18px;
-  fill: currentColor;
+  fill: url("#linear");
 }
 
 .footer-nav-list {
