@@ -18,17 +18,18 @@
 }
 
 
-.modal-rent-background-circle {
+.rent-modal-container::after {
+    content:"";
     width: 142px;
     height: 142px;
     transform: rotate(-45.074deg);
     border-radius: 323px;
     opacity: 0.6000000238418579;
-    background: #91AFBA;;
+    background: #91AFBA;
     filter: blur(100px);
     position: absolute;
     z-index: -1;
-    top: 10%;
+    top: 20%;
     right: 50%;
     transform: translate(50%);
     
@@ -36,7 +37,8 @@
 
 /* Tablet devices */
 @media screen and (min-width: 768px) {
-    .modal-rent-background-circle {
+    .rent-modal-container::after {
+        content: "";
         width: 265px;
         height: 265px;
         top: 10%;
