@@ -1,4 +1,4 @@
-const swiper = new Swiper(".swiper", {
+const swiper = new Swiper('.swiper', {
   slidesPerView: 1,
   spaceBetween: 16,
   clickable: true,
@@ -6,10 +6,10 @@ const swiper = new Swiper(".swiper", {
   //   slideToClickedSlide: true,
 
   pagination: {
-    el: ".swiper-pagination",
+    el: '.swiper-pagination',
   },
 
-  scrollbar: {
-    el: ".swiper-scrollbar",
-  },
+  //   scrollbar: {
+  //     el: ".swiper-scrollbar",
+  //   },
 });
