@@ -14,6 +14,21 @@
   position: relative;
 }
 
+.title-img::after {
+  content: '';
+  position: absolute;
+  width: 414px;
+  height: 414px;
+  transform: rotate(-45.074deg);
+  border-radius: 414px;
+  opacity: 0.6000000238418579;
+  background: #91afba;
+  filter: blur(100px);
+  left: 142px;
+  top: 300px;
+  z-index: -1;
+}
+
 .rent-title {
   color: var(--white, #f6f5ef);
   font-family: DM Sans;
@@ -23,19 +38,6 @@
   line-height: 110%;
 }
 
-.rent-background-circle {
-  position: absolute;
-  width: 414px;
-  height: 414px;
-  transform: rotate(-45.074deg);
-  border-radius: 414px;
-  opacity: 0.6000000238418579;
-  background: #91afba;
-  filter: blur(100px);
-  left: 726px;
-  top: 0;
-  z-index: -1;
-}
 .rent-card-img {
   width: 100%;
   max-width: 259px;
@@ -226,6 +228,11 @@ input {
     max-width: 259px;
     max-height: 187px;
   }
+
+  .title-img::after {
+    left: 453px;
+    top: 0;
+  }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -252,5 +259,10 @@ input {
 
   .rent-card-img {
     max-width: 282px;
+  }
+
+  .title-img::after {
+    left: 726px;
+    top: 0;
   }
 }
