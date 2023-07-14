@@ -29,10 +29,6 @@
 
 /* REVIEW MOBILE */
 @media screen and (min-width: 200px) {
-  body {
-    box-sizing: border-box;
-  }
-
   .review-section {
     padding-top: 80px;
     padding-bottom: 80px;
@@ -41,7 +37,6 @@
   .review-container {
     max-width: 375px;
     padding: 0 20px;
-    box-sizing: border-box;
   }
 
   .review-swiper {
@@ -55,7 +50,6 @@
   }
 
   .swiper .review-card-style {
-    box-sizing: border-box;
     max-width: 335px;
     padding: 24px 14px;
     display: flex;
@@ -149,7 +143,6 @@
 
 @media screen and (min-width: 768px) {
   body {
-    box-sizing: border-box;
   }
 
   .review-section {
@@ -160,7 +153,6 @@
   .review-container {
     max-width: 768px;
     padding: 0 32px;
-    box-sizing: border-box;
   }
 
   .review-swiper {
@@ -174,7 +166,6 @@
   }
 
   .swiper .review-card-style {
-    box-sizing: border-box;
     max-width: 344px;
     padding: 24px 12px;
   }
@@ -243,10 +234,6 @@
 /* REVIEW DESKTOP */
 
 @media screen and (min-width: 1280px) {
-  body {
-    box-sizing: border-box;
-  }
-
   .review-section {
     padding-top: 164px;
     padding-bottom: 164px;
@@ -257,7 +244,6 @@
     padding: 0 32px;
     padding: 0 32px;
     margin: 0 auto;
-    box-sizing: border-box;
   }
 
   .review-swiper {
