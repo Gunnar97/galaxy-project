@@ -36,6 +36,7 @@
   .review-swiper .swiper-pagination-bullet {
     background-color: var(--swiper-bullet-color, #1f212d);
     filter: drop-shadow(2px 1px 3px rgba(24, 55, 91, 0.2));
+    opacity: 1;
     width: 13px;
     height: 13px;
     margin-right: 10px;
@@ -65,8 +66,8 @@
   }
 
   .review-section {
-    padding-top: 40px;
-    padding-bottom: 67px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
   .review-title {
@@ -158,8 +159,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .review-section {
-    padding-top: 36px;
-    padding-bottom: 109px;
+    padding-top: 100px;
+    padding-bottom: 100px;
   }
 
   .review-container {
@@ -268,11 +269,6 @@ body {
     display: none;
   }
 
-  .review-swiper > .swiper > .swiper-wrapper {
-    padding-bottom: 0;
-    column-gap: 16px;
-  }
-
   .review-swiper .swiper-wrapper {
     width: 1216px;
     height: 282px;
@@ -291,8 +287,8 @@ body {
     margin-right: 32px;
   }
   .review-section {
-    padding-top: 100px;
-    padding-bottom: 64px;
+    padding-top: 164px;
+    padding-bottom: 164px;
   }
 
   .review-container {
