@@ -44,12 +44,12 @@
     box-sizing: border-box;
   }
 
-  .swiper {
+  .review-swiper {
     max-width: 335px;
     margin: 0 auto;
   }
 
-  .swiper .swiper-wrapper {
+  .swiper .review-swiper-wrapper {
     width: 335px;
     padding-bottom: 42px;
   }
@@ -163,12 +163,12 @@
     box-sizing: border-box;
   }
 
-  .swiper {
+  .review-swiper {
     max-width: 704px;
     margin: 0 auto;
   }
 
-  .swiper .swiper-wrapper {
+  .swiper .review-swiper-wrapper {
     width: 704px;
     padding-bottom: 57px;
   }
@@ -260,14 +260,14 @@
     box-sizing: border-box;
   }
 
-  .swiper {
+  .review-swiper {
     max-width: 1216px;
     margin: 0 auto;
   }
 
-  .swiper .swiper-wrapper {
+  .swiper .review-swiper-wrapper {
     width: 1216px;
-    height: 282px;
+    /* height: 282px; */
     margin: 0 auto;
     padding-bottom: 0;
   }
