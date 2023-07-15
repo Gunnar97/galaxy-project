@@ -4,31 +4,35 @@
     flex-direction: column;
     width: 335px;
     height: 396px;
-    background: var(--yachtblock-cards-background);
+    background: #1F212D;;
     border-radius: 20px;
     padding: 40px 24px;
-    outline: 1px solid red;
+
 }
 
 .rent-modal-container{
     width: 335px;
     height: 396px;
-    position: relative;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
     
 }
 
 
-.modal-rent-background-circle {
+.rent-modal-container::after {
+    content:"";
     width: 142px;
     height: 142px;
     transform: rotate(-45.074deg);
     border-radius: 323px;
     opacity: 0.6000000238418579;
-    background: #91AFBA;;
-    filter: blur(100px);
+    
     position: absolute;
-    z-index: -1;
-    top: 10%;
+    z-index: 1;
+    top: 20%;
     right: 50%;
     transform: translate(50%);
     
@@ -36,7 +40,8 @@
 
 /* Tablet devices */
 @media screen and (min-width: 768px) {
-    .modal-rent-background-circle {
+    .rent-modal-container::after {
+        content: "";
         width: 265px;
         height: 265px;
         top: 10%;
@@ -80,7 +85,7 @@
     fill: var(--text-color);
 }
 
-/* .modal-rent.is-hidden {
+/* .rent-modal-container.is-hidden {
     opacity: 0;
     pointer-events: none;
     visibility: hidden;
@@ -121,7 +126,7 @@
     .rent-modal-container {
         width: 570px;
         height: 522px;
-        position: relative;
+       
         }
 
 
@@ -129,6 +134,7 @@
         margin-left: auto;
         margin-right: auto;
          margin-bottom: 21px;
+        z-index: 3;
     }
     .modal-rent-strong-text { 
         margin-bottom: 16px;

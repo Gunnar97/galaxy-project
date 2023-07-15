@@ -35,7 +35,8 @@
 }
 
 .footer-social-link {
-  background-color: transparent;
+  background: linear-gradient(#11131f, #11131f) padding-box,
+    linear-gradient(107deg, #bec7c2 0%, #a1b5ba 100%) border-box;
   width: 32px;
   height: 32px;
   border: 1px solid var(--reviews-card-text);
@@ -43,16 +44,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  /* color: var(--linear-green); */
+  transition: border-color var(--transition-duration-250)
+    var(--transition-timing-function);
 }
-
-/* .footer-social-link:hover {
-  border-color: var(--linear-green)
-} */
-
 
 .footer-social-icon {
   fill: currentColor;
+}
+
+.footer-social-link:hover {
+  border-color: transparent;
+}
+.footer-social-link:hover .footer-social-icon {
+  fill: url('#linear');
 }
 
 .footer-logo-link {
@@ -69,7 +73,7 @@
   margin-right: 8px;
   width: 16px;
   height: 18px;
-  fill: currentColor;
+  fill: url('#linear');
 }
 
 .footer-nav-list {
@@ -97,7 +101,15 @@
 @media screen and (min-width: 768px) {
   .footer-wrapper {
     padding-top: 64px;
+    margin-bottom: 100px;
   }
+
+  .footer-logo-link,
+  .footer-socials,
+  .footer-navigation {
+    margin-bottom: 0;
+  }
+
   .footer-wrapper {
     flex-direction: row;
   }
@@ -105,9 +117,7 @@
     flex-direction: row;
     width: 100%;
     text-transform: uppercase;
-    margin-bottom: 40px;
     align-items: flex-start;
-    margin-bottom: 100px;
   }
   .footer-logo-link {
     font-size: 18px;
@@ -125,7 +135,6 @@
   .footer-logo-icon {
     width: 20px;
     height: 23px;
-    fill: currentColor;
   }
   .copyrigth-block {
     gap: 32px;
@@ -136,13 +145,72 @@
 
 /* DESKTOP */
 @media screen and (min-width: 1280px) {
+  .footer-wrapper {
+    margin-bottom: 132px;
+  }
+  
   .footer-logo-link {
     margin-right: 337px;
   }
   .footer-nav-list {
     flex-direction: row;
   }
-  .footer-socials {
-    margin-bottom: 132px;
-  }  
+}
+
+/* to top button */
+
+/* .to-top {
+  position: sticky;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: 20px;
+  place-self: end;
+  margin-top: calc(100vh + 50px);
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-image: url(../img/arrow.svg), url(../img/gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  z-index: 100;
+} */
+
+.to-top {
+  position: fixed;
+  bottom: 2px;
+  right: 20px;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-image: url(./img/arrow.svg), url(./img/gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.5s;
+  z-index: 100;
+}
+
+.to-top.active {
+  bottom: 20px;
+  pointer-events: auto;
+  opacity: 1;
+}
+
+@media screen and (min-width: 768px) {
+  .to-top {
+    width: 68px;
+    height: 68px;
+    background-image: url(./img/arrow-big.svg), url(./img/gradient.png);
+    right: 32px;
+  }
+
+  .to-top.active {
+    bottom: 32px;
+    pointer-events: auto;
+    opacity: 1;
+  }
 }
