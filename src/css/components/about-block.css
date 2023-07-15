@@ -1,3 +1,11 @@
+:root {
+    --aboutblock-image-gap: 24px;
+}
+
+.about-section {
+    padding-bottom: 70px;
+}
+
 .about-container {
     display: flex;
     flex-direction: column;
@@ -39,7 +47,7 @@
 .about-list-images {
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: var(--aboutblock-image-gap);
 
     width: 100%;
 }
@@ -48,15 +56,28 @@
     position: relative;
 }
 
+.image-item-wrapper img {
+    width: 100%;
+}
+
 .list-image-item:last-child .image-item-wrapper {
     position: absolute;
-    top:100%;
+    top: 100%;
     right: 0;
+    width: 70%;
     border-radius: 24px;
     z-index: -1;
 }
 
 @media screen and (min-width: 768px) {
+    :root {
+        --aboutblock-image-gap: 32px;
+    }
+
+    .about-section {
+        padding-bottom: 25px;
+    }
+
     .about-container {
         width: 768px;
         flex-wrap: wrap;
@@ -100,7 +121,7 @@
     }
 
     .list-image-item.last-img {
-        flex: 0 1 calc(100% - 332px);
+        flex: 0 1 calc(100% - (308px + var(--aboutblock-image-gap)));
     }
 
     .list-image-item:last-child .image-item-wrapper {
@@ -110,26 +131,57 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .about-section {
+        padding-bottom: 70px;
+    }
+
     .about-container {
         width: 1280px;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .about-title, .about-info {
+        flex-basis: 50%;
+    }
+
+    .about-info {
+        max-width: 400px;
     }
 
     .about-list-images {
-        /*flex-direction: row-reverse;*/
-        /*justify-content: flex-end;*/
-        /*align-items: center;*/
+        position: relative;
     }
 
-    .list-image-item .first-img {
-        width: 100%;
-        justify-content: center;
+    .list-image-item.first-img,
+    .list-image-item.second-img,
+    .list-image-item.last-img {
+        flex: 0 0;
     }
 
-    .list-image-item .second-img {
+    .list-image-item.first-img {
+        flex-basis: 533px;
     }
 
-    .list-image-item .last-img {
+    .list-image-item.second-img {
+        order: -1;
+        flex-basis: 308px;
+
+        position: relative;
     }
 
+    .list-image-item.second-img .image-item-wrapper {
+        position: relative;
+        top: 55%;
+    }
 
+    .list-image-item.last-img {
+        flex-basis: 100%;
+        position: relative;
+        left: calc(308px + var(--aboutblock-image-gap));
+    }
+
+    .list-image-item.last-img .image-item-wrapper {
+        width: 260px;
+    }
 }
