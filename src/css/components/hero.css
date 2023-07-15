@@ -139,7 +139,6 @@
 
 .hero-bcg-img {
     height: 100%;
-    border-radius: 40px;
     width: 100%;
     max-width: 335px;
     max-height: 427px;
@@ -384,15 +383,9 @@
     }
 
     .hero-bcg-img {
-        height: 100%;
         max-width: 426px;
         max-height: 598px;
 
-        position: absolute;
-        z-index: -3;
-
-        left: 0;
-        top: 0;
     }
 
 
@@ -507,10 +500,12 @@
 
     .hero-anchor-link {
         font-size: 18px;
+        transition: border-color .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1), box-shadow .20s cubic-bezier(.4, 0, .2, 1);
     }
 
     .hero-button {
         font-size: 18px;
+        transition: border-color .25s cubic-bezier(.4, 0, .2, 1), color .25s cubic-bezier(.4, 0, .2, 1), box-shadow .20s cubic-bezier(.4, 0, .2, 1);
     }
 
 
@@ -518,12 +513,20 @@
     .hero-anchor-link:focus {
         color: var(--button-light-background);
         border-color: var(--button-light-background);
+        box-shadow: 0 0 3px #aac8cc,
+                0 0 6px #aac8cc,
+                0 0 9px #aac8cc,
+                0 0 12px #aac8cc;
 
     }
 
     .hero-button:hover,
     .hero-button:focus {
         background-color: #88B3B9;
+        box-shadow: 0 0 3px #cadbdd,
+                0 0 6px #cadbdd,
+                0 0 9px #cadbdd,
+                0 0 12px #cadbdd;
     }
 
    
@@ -601,14 +604,13 @@ z-index: 2;
 
     .hero-list-client {
         display: grid;
-        grid-template-columns: repeat(3, 3rem);
+        grid-template-columns: repeat(3, 2.8rem);
     }
 
     .hero-list-anim {
         width: 56px;
         height: 56px;
-        border-radius: 50%;
-        transition: transform 300ms;
+        transition: transform 400ms;
     
     }
 
@@ -616,6 +618,13 @@ z-index: 2;
         transform: translateX(3rem);
     }
 
+    .hero-clients-link:hover~.hero-text-clients {
+        transform: translateY(0.5rem);
+    }
+
+    .hero-text-clients {
+        transition: .2s;
+    }
 
     .hero-yacht-img,
     .hero-yachtowner-img,
@@ -637,5 +646,19 @@ z-index: 2;
     }
 
 
+    .hero-text-amount,
+    .hero-text-about {
+    transition: all .2s ease-in-out;
+}
+
+
+    .hero-text-amount:hover   {
+    transform: scale(1.2);
+    filter: drop-shadow(6px 4px 2px #718d92);
+    }
+
+    .hero-text-amount:hover~.hero-text-about {
+    transform: translateX(1rem);
+    }
 
 }
