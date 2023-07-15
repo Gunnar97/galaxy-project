@@ -52,10 +52,12 @@
   fill: currentColor;
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   border-color: transparent;
 }
-.footer-social-link:hover .footer-social-icon {
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
   fill: url('#linear');
 }
 
@@ -194,11 +196,18 @@
   z-index: 100;
 }
 
+.to-top:hover,
+.to-top:focus {
+  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+}
+
 .to-top.active {
   bottom: 20px;
   pointer-events: auto;
   opacity: 1;
 }
+
+
 
 @media screen and (min-width: 768px) {
   .to-top {
