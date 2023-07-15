@@ -395,4 +395,28 @@ input {
     transform: scale(1.2);
     filter: drop-shadow(5px 7px 10px #93abae);
   }
+
+  /* form border */
+
+  @keyframes border-color-animation {
+    0% {
+      border-bottom-color: #f6f5ef;
+    }
+    50% {
+      border-bottom-color: #93abae;
+    }
+    100% {
+      border-bottom-color: #4d6c71;
+    }
+  }
+
+  .user-input {
+    animation: border-color-animation 2s infinite;
+    animation-direction: alternate;
+  }
+
+  .user-input:hover,
+  .user-input:focus {
+    animation-play-state: paused;
+  }
 }
