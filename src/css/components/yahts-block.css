@@ -52,7 +52,7 @@
   opacity: 0.6000000238418579;
   background: var(--background-gradient-circles);
   filter: blur(100px);
-  z-index: -1;
+  z-index: -5;
 }
 
 .yacht-title::after {
@@ -64,7 +64,7 @@
   opacity: 0.30000001192092896;
   background: var(--background-gradient-circles-small);
   filter: blur(100px);
-  z-index: 1;
+  z-index: -5;
 }
 
 .yacht-title .to-rental-btn {
