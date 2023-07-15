@@ -172,9 +172,9 @@ input {
 }
 
 @media only screen and (min-width: 375px) {
-  .rent-section {
-    /* max-width: 375px; */
-  }
+  /* .rent-section {
+     max-width: 375px; 
+  } */
 
   .user-input {
     width: 335px;
@@ -236,6 +236,10 @@ input {
 }
 
 @media only screen and (min-width: 1280px) {
+  .rent-block.container {
+    padding: 0 184px;
+  }
+
   .rent-section {
     max-width: 1216px;
   }
@@ -264,5 +268,35 @@ input {
   .title-img::after {
     left: 726px;
     top: 0;
+  }
+
+  .rent-btn:hover,
+  .rent-btn:focus {
+    box-shadow: 1px 1px 25px 5px #93abae;
+  }
+
+  .rent-btn {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .rent-btn:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      120deg,
+      transparent,
+      rgba(147, 171, 174, 0.4),
+      transparent
+    );
+    transition: all 650ms;
+  }
+
+  .rent-btn:hover:before {
+    left: 100%;
   }
 }
