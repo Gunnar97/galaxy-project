@@ -184,7 +184,7 @@
   width: 44px;
   height: 44px;
   border-radius: 8px;
-  background-image: url(../../img/arrow.svg), url(../../img/gradient.png);
+  background-image: url("../../img/arrow.svg"), url("../../img/gradient.png");
   background-repeat: no-repeat;
   background-position: center;
   display: block;
@@ -204,7 +204,7 @@
   .to-top {
     width: 68px;
     height: 68px;
-    background-image: url(./img/arrow-big.svg), url(./img/gradient.png);
+    background-image: url("../../img/arrow-big.svg"), url("../../img/gradient.png");
     right: 32px;
   }
 
