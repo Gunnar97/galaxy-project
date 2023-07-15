@@ -125,13 +125,13 @@
 }
 
 .swiper-button-prev {
-  top: 100%;
+  top: 101%;
   left: calc(50% - 60px);
   transform: translateY(-55%);
 }
 .swiper-button-next {
   /* right: 10%; */
-  top: 100%;
+  top: 101%;
   right: calc(50% - 60px);
   transform: translateY(-55%);
 }
@@ -300,7 +300,6 @@
     transform: translateY(-50%);
   }
   .swiper-button-next {
-    top: 100%;
     /* right: 0; */
     transform: translateY(-50%);
   }
