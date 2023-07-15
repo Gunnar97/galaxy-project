@@ -11,11 +11,11 @@
     
 
     <title>Yaht Adventures</title>
-    <script type="module" crossorigin src="/galaxy-project/assets/index-07243c3e.js"></script>
-    <link rel="stylesheet" href="/galaxy-project/assets/index-ec1fb030.css">
+    <script type="module" crossorigin src="/galaxy-project/assets/index-e285e1f1.js"></script>
+    <link rel="stylesheet" href="/galaxy-project/assets/index-2b382747.css">
   </head>
   <body>
-    <div class="page">
+    <div class="page page-container">
       <header class="container">
   <div class="header-wrapper">
     <nav class="header-navigation">
@@ -889,13 +889,13 @@
     </div>
 
     <!--          form                        -->
-    <form class="rent-form" name="rent_form" autocomplete="on">
+    <form class="rent-form" name="rent_form" autocomplete="on" id="myForm">
       <div class="rent-input">
         <!--            Name                    -->
         <div class="rent-inputs">
           <label class="user-name">
             <input
-              class="user-input"
+              class="user-input required-field"
               type="text"
               name="user_name"
               required
@@ -910,7 +910,7 @@
         <div class="rent-inputs">
           <label class="user-email">
             <input
-              class="user-input"
+              class="user-input required-field"
               type="email"
               name="user_email"
               required
@@ -924,7 +924,7 @@
         <div class="rent-inputs">
           <label class="user-phone">
             <input
-              class="user-input"
+              class="user-input required-field"
               type="tel"
               name="user_phone"
               required
@@ -948,7 +948,7 @@
         </div>
       </div>
 
-      <button type="submit" class="rent-btn">
+      <button type="submit" id="submitButton" class="rent-btn">
         Send
         <svg class="rent-icon" width="18" height="9">
           <use href="/galaxy-project/assets/icons-0694ab57.svg#icon-rent-arrow"></use>
@@ -1238,9 +1238,9 @@
 </footer>
 
 
-      <div class="rent-modal-container">
-  <div class="modal-rent is-hidden">
-    <button class="modal-rent-btn" aria-label="Close button">
+      <div class="rent-modal-container is-hidden" id="myModal">
+  <div class="modal-rent">
+    <button class="modal-rent-btn" id="closeButton" aria-label="Close button">
       <svg class="modal-rent-icon" width="20" height="20">
         <use href="/galaxy-project/assets/original-69de3549.svg#icon-modal-close"></use>
       </svg>
