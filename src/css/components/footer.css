@@ -52,10 +52,12 @@
   fill: currentColor;
 }
 
-.footer-social-link:hover {
+.footer-social-link:hover,
+.footer-social-link:focus {
   border-color: transparent;
 }
-.footer-social-link:hover .footer-social-icon {
+.footer-social-link:hover .footer-social-icon,
+.footer-social-link:focus .footer-social-icon {
   fill: url('#linear');
 }
 
@@ -89,7 +91,7 @@
 .copyrigth-block {
   display: flex;
   gap: 14px;
-  color: rgba(246, 245, 239, 0.5);
+  color: var(--reviews-card-text);
   justify-content: center;
   font-size: 12px;
   font-weight: 400;
@@ -184,14 +186,27 @@
   width: 44px;
   height: 44px;
   border-radius: 8px;
-  background-image: url(./img/arrow.svg), url(./img/gradient.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  display: block;
+  /* background-image: url('../../img/to-top-btn/arrow.svg'), url('../../img/to-top-btn/gradient.png'); */
+  background-color: var(--button-light-background);
+  /* background-repeat: no-repeat;
+  background-position: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   opacity: 0;
   pointer-events: none;
   transition: all 0.5s;
   z-index: 100;
+}
+
+.to-top-icon {
+  width: 8px;
+  height: 16px;
+  fill: var(--text-color);
+}
+
+.to-top:hover {
+  box-shadow: 1px 1px 25px 10px var(--reviews-card-text);
 }
 
 .to-top.active {
@@ -204,8 +219,14 @@
   .to-top {
     width: 68px;
     height: 68px;
-    background-image: url(./img/arrow-big.svg), url(./img/gradient.png);
+    /* background-image: url('../../img/to-top-btn/arrow-big.svg'), url('../../img/to-top-btn/gradient.png'); */
     right: 32px;
+  }
+
+  .to-top-icon {
+    width: 16px;
+    height: 30px;
+    fill: var(--text-color);
   }
 
   .to-top.active {

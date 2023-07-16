@@ -76,7 +76,7 @@
 
 
 .modal-rent-icon {
-    fill: var(--text-color);
+    stroke: var(--text-color);
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 

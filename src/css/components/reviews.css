@@ -30,7 +30,7 @@
 /* REVIEW MOBILE */
 @media screen and (min-width: 200px) {
   .review-section {
-    padding-top: 80px;
+    padding-top: 40px;
     padding-bottom: 80px;
   }
 
@@ -146,7 +146,7 @@
   }
 
   .review-section {
-    padding-top: 100px;
+    padding-top: 64px;
     padding-bottom: 100px;
   }
 
@@ -235,7 +235,7 @@
 
 @media screen and (min-width: 1280px) {
   .review-section {
-    padding-top: 164px;
+    padding-top: 64px;
     padding-bottom: 164px;
   }
 
