@@ -27,9 +27,9 @@
   position: absolute;
   width: 414px;
   height: 414px;
-  transform: rotate(-45.074deg);
+  transform: rotate(-45deg);
   border-radius: 414px;
-  opacity: 0.6000000238418579;
+  opacity: 0.6;
   background: #91afba;
   filter: blur(100px);
   left: 142px;
