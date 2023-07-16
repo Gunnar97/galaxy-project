@@ -118,9 +118,8 @@
     content: "";
     width: 323px;
     height: 323px;
-    transform: rotate(-44.916deg);
     border-radius: 323px;
-    opacity: 0.6000000238418579;
+    opacity: 0.6;
     background: #91AFBA;
     filter: blur(100px);
     position: absolute;
@@ -134,7 +133,6 @@
     .services-list::after {
         width: 414px;
         height: 414px;
-        transform: rotate(-44.094deg);
         transform: translateX(-50%);
         border-radius: 414px;
         top: 580px;
@@ -143,7 +141,6 @@
 
 @media screen and (min-width: 1280px) {
     .services-list::after {
-        transform: rotate(-45.074deg);
         top: 280px;
         transform: translateX(-55%);
     }
