@@ -203,9 +203,9 @@
 .container-hero::before {
     content: "";
     position: absolute;
-    transform: rotate(-45.074deg);
+    transform: rotate(-45deg);
     border-radius: 279px;
-    opacity: 0.6000000238418579;
+    opacity: 0.6;
     background: var(--background-gradient-circles);
     filter: blur(100px);
     z-index: -5;
@@ -218,9 +218,9 @@
 .container-hero::after {
     content: "";
     position: absolute;
-    transform: rotate(-45.074deg);
+    transform: rotate(-45deg);
     border-radius: 279px;
-    opacity: 0.8999999761581421;
+    opacity: 0.9;
     background: var(--hero-backgroun-circle);
     filter: blur(100px);
     z-index: -5;
@@ -481,9 +481,9 @@
         position: absolute;
         width: 414px;
         height: 414px;
-        transform: rotate(-45.074deg);
+        transform: rotate(-45deg);
         border-radius: 414px;
-        opacity: 0.6000000238418579;
+        opacity: 0.6;
         background: var(--background-gradient-circles);
         filter: blur(100px);
         z-index: -5;
@@ -496,9 +496,9 @@
         position: absolute;
         width: 414px;
         height: 414px;
-        transform: rotate(-45.074deg);
+        transform: rotate(-45deg);
         border-radius: 414px;
-        opacity: 0.8999999761581421;
+        opacity: 0.9;
         background: var(--background-gradient-circles);
         filter: blur(100px);
         z-index: -5;
@@ -511,9 +511,9 @@
         position: absolute;
         width: 316px;
         height: 316px;
-        transform: rotate(-45.074deg);
+        transform: rotate(-45deg);
         border-radius: 414px;
-        opacity: 0.30000001192092896;
+        opacity: 0.3;
         background: var(--background-gradient-circles-small);
         filter: blur(100px);
         z-index: -5;
@@ -598,6 +598,7 @@
 
     .hero-yachtowner-img {
         left: 305px;
+        z-index: 1;
     }
 
 
@@ -609,9 +610,9 @@
         position: absolute;
         width: 414px;
         height: 414px;
-        transform: rotate(-45.074deg);
+        transform: rotate(-45deg);
         border-radius: 414px;
-        opacity: 0.6000000238418579;
+        opacity: 0.6;
         background: var(--background-gradient-circles);
         filter: blur(100px);
         z-index: -5;
@@ -624,9 +625,9 @@
         position: absolute;
         width: 414px;
         height: 414px;
-        transform: rotate(-45.074deg);
+        transform: rotate(-45deg);
         border-radius: 414px;
-        opacity: 0.8999999761581421;
+        opacity: 0.9;
         background: var(--hero-backgroun-circle);
         filter: blur(100px);
         z-index: -5;
@@ -639,9 +640,9 @@
         position: absolute;
         width: 316px;
         height: 316px;
-        transform: rotate(-45.074deg);
+        transform: rotate(-45deg);
         border-radius: 414px;
-        opacity: 0.30000001192092896;
+        opacity: 0.3;
         background: var(--background-gradient-circles-small);
         filter: blur(100px);
         z-index: -5;
