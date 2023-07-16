@@ -1,11 +1,4 @@
-/* VARS
-:root {
-  --swiper-bullet-active-color: #88b3b9;
-  --swiper-bullet-color: #1f212d;
-  --yachts-gradient-color-start: #bec7c2;
-  --yachts-gradient-color-end: #a1b5ba;
-  --review-card-text-color: rgba(246, 245, 239, 0.5);
-} */
+/* REVIEW STYLES */
 
 .swiper .swiper-pagination-bullet {
   background-color: var(--swiper-bullet-color, #1f212d);
