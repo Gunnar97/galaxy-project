@@ -1,7 +1,11 @@
 <section class="rent-section section" id="rent_section">
   <div class="container rent-block">
     <div class="title-img">
-      <h2 class="rent-title">Rent a yaht now</h2>
+      <h2 class="rent-title rent-title-noanimation">Rent a yaht now</h2>
+      <h2 class="rent-title rent-title-animation">Rent a</h2>
+      <h2 class="rent-title rent-title-animation">Rent a</h2>
+      <h2 class="rent-title rent-title-animation-second">yaht now</h2>
+      <h2 class="rent-title rent-title-animation-second">yaht now</h2>
       <!--          picture                     -->
       <picture>
         <!-- Desktop screen -->
@@ -77,7 +81,7 @@
               type="text"
               name="user_name"
               required
-              pattern="[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}\s[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}"
+              pattern="[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}(\s[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,})?"
               placeholder="Name Surname"
             />
             <span class="user-tag">Full Name</span>
@@ -106,8 +110,8 @@
               type="tel"
               name="user_phone"
               required
-              pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-              placeholder="012 345 6789"
+              pattern="[0-9]{10}"
+              placeholder="0123456789"
             />
             <span class="user-tag">Phone number</span>
           </label>
