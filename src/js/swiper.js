@@ -7,7 +7,7 @@ import { Navigation, Pagination } from 'swiper/modules';
 const yachtsSlider = new Swiper('#yachts-slider', {
   // Optional parameters
   // direction: "horizontal", // "horizontal", "vertical"
-  // speed: 600, // швидкість перемикання слайду
+  speed: 650, // швидкість перемикання слайду
   // effect: "fade", // slider, cards, coverflow, flip, fade, cube
   initialSlide: 0, // початок з 2-го слайду
   // freemode: true, // дозволяє перетаскувати мишкою

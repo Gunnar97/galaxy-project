@@ -5,8 +5,16 @@
         <use href="./img/svg/icons.svg#icon-modal-close"></use>
       </svg>
     </button>
-    <picture>
+    <picture class="modal-rent-picture">
       <!-- Tablet screen -->
+      <source
+        media="(min-width: 768px)"
+        srcset="
+          ./img/rent-modal/img-yahtmodal-rent-tablreswebp.webp,
+          ./img/rent-modal/img-yahtmodal-rent-tabl@2xreswebp.webp
+        "
+        type="image/webp"
+      />
       <source
         media="(min-width: 768px)"
         srcset="
@@ -17,6 +25,14 @@
       />
       <!-- Mobile screen -->
       <source
+        media="(max-width: 768px)"
+        srcset="
+          ./img/rent-modal/img-yahtmodal-rent-mobreswebp.webp,
+          ./img/rent-modal/img-yahtmodal-rent-mob@2xreswebp.webp
+        "
+        type="image/webp"
+      />
+      <source
         media="(max-width: 767px)"
         srcset="
           ./img/rent-modal/img-yahtmodal-rent-mobres.png,
@@ -26,7 +42,7 @@
       />
       <img
         class="card-img"
-        src="../img/rent-modal/img-yahtmodal-rent-mobres.png"
+        src="./img/rent-modal/img-yahtmodal-rent-tablreswebp.webp"
         alt="Ноутбук"
         width="338"
         height="198"
