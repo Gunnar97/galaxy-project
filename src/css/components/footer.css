@@ -99,6 +99,19 @@
   letter-spacing: 0.36px;
 }
 
+.footer-logo-link,
+.footer-nav-link {
+  transition: color var(--transition-duration-250)
+  var(--transition-timing-function);
+}
+
+.footer-logo-link:hover,
+.footer-logo-link:focus,
+.footer-nav-link:hover,
+.footer-nav-link:focus {
+	color:var(--button-light-background);
+}
+
 /* TABLET */
 @media screen and (min-width: 768px) {
   .footer-wrapper {
