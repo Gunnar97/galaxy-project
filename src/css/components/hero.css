@@ -267,7 +267,7 @@
     top: -30px;
     left: 0;
     background: #718d92;
-    box-shadow: inset 0 0 50px grba(0, 0, 0, 0.7);
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, 0.7);
     z-index: -1;
     transition: .5s;
 }
@@ -313,7 +313,7 @@
 }
 
 .hero-anchor-link:hover {
-    box-shadow: 0 0 5px #718d92, inset 0 0 5x #718d92;
+    box-shadow: 0 0 5px #718d92, inset 0 0 5px #718d92;
 
 }
 
