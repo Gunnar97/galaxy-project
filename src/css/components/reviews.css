@@ -1,11 +1,11 @@
-/* VARS */
+/* VARS
 :root {
   --swiper-bullet-active-color: #88b3b9;
   --swiper-bullet-color: #1f212d;
   --yachts-gradient-color-start: #bec7c2;
   --yachts-gradient-color-end: #a1b5ba;
   --review-card-text-color: rgba(246, 245, 239, 0.5);
-}
+} */
 
 .swiper .swiper-pagination-bullet {
   background-color: var(--swiper-bullet-color, #1f212d);
@@ -84,6 +84,7 @@
     );
     background-size: 100%;
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 
@@ -142,9 +143,6 @@
 /* REVIEW TABLET */
 
 @media screen and (min-width: 768px) {
-  body {
-  }
-
   .review-section {
     padding-top: 64px;
     padding-bottom: 100px;

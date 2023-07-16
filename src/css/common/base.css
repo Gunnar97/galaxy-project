@@ -18,6 +18,11 @@
   --aboutblock-image-gradient: linear (#000000, #11131f);
   --transition-duration-250: 250ms;
   --transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --swiper-bullet-active-color: #88b3b9;
+  --swiper-bullet-color: #1f212d;
+  --yachts-gradient-color-start: #bec7c2;
+  --yachts-gradient-color-end: #a1b5ba;
+  --review-card-text-color: rgba(246, 245, 239, 0.5);
 
   --border-radius: 24px;
   --indent-vertical: 6px;
@@ -30,14 +35,14 @@ html {
 }
 
 body {
-    background-color: var(--background-color);
-    color: var(--text-color);
-    font-family: "DM Sans", sans-serif;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 1.4;
-    letter-spacing: -0.02em;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.4;
+  letter-spacing: -0.02em;
   background-color: var(--background-color);
   color: var(--text-color);
   font-family: 'DM Sans', sans-serif;
@@ -48,7 +53,7 @@ body {
   letter-spacing: -0.32px;
 }
 
-.page{
+.page {
   overflow: hidden;
 }
 
