@@ -50,6 +50,19 @@
   letter-spacing: 0.42px;
 }
 
+.header-logo-link,
+.header-nav-link {
+  transition: color var(--transition-duration-250)
+  var(--transition-timing-function);
+}
+
+.header-logo-link:hover,
+.header-logo-link:focus,
+.header-nav-link:hover,
+.header-nav-link:focus {
+	color:var(--button-light-background);
+}
+
 /* TABLET */
 @media screen and (max-width: 767.98px) {
   .header-nav-list {
