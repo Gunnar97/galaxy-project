@@ -1,0 +1,76 @@
+/* to top button */
+
+/* .to-top {
+  position: sticky;
+  bottom: 20px;
+  margin-left: auto;
+  margin-right: 20px;
+  place-self: end;
+  margin-top: calc(100vh + 50px);
+  width: 44px;
+  height: 44px;
+  border-radius: 8px;
+  background-image: url(../img/arrow.svg), url(../img/gradient.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: block;
+  z-index: 100;
+} */
+
+.to-top {
+    position: fixed;
+    bottom: 2px;
+    right: 20px;
+  
+    width: 44px;
+    height: 44px;
+    border-radius: 8px;
+    /* background-image: url('../../img/to-top-btn/arrow.svg'), url('../../img/to-top-btn/gradient.png'); */
+    background-color: var(--button-light-background);
+    /* background-repeat: no-repeat;
+    background-position: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.5s;
+    z-index: 100;
+  }
+  
+  .to-top-icon {
+    width: 8px;
+    height: 16px;
+    fill: var(--text-color);
+  }
+  
+  .to-top:hover {
+    box-shadow: 1px 1px 25px 10px var(--reviews-card-text);
+  }
+  
+  .to-top.active {
+    bottom: 20px;
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .to-top {
+      width: 68px;
+      height: 68px;
+      /* background-image: url('../../img/to-top-btn/arrow-big.svg'), url('../../img/to-top-btn/gradient.png'); */
+      right: 32px;
+    }
+  
+    .to-top-icon {
+      width: 16px;
+      height: 30px;
+      fill: var(--text-color);
+    }
+  
+    .to-top.active {
+      bottom: 32px;
+      pointer-events: auto;
+      opacity: 1;
+    }
+  }
