@@ -81,7 +81,7 @@
               type="text"
               name="user_name"
               required
-              pattern="[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}\s[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}"
+              pattern="[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,}(\s[А-ЯІЇЄҐа-яіїєґA-Za-z]{2,})?"
               placeholder="Name Surname"
             />
             <span class="user-tag">Full Name</span>
@@ -110,8 +110,8 @@
               type="tel"
               name="user_phone"
               required
-              pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-              placeholder="012 345 6789"
+              pattern="[0-9]{10}"
+              placeholder="0123456789"
             />
             <span class="user-tag">Phone number</span>
           </label>
