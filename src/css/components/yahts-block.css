@@ -19,7 +19,7 @@
 }
 
 .section-title {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -34,7 +34,7 @@
   flex-direction: column;
   gap: 40px;
 
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -179,7 +179,7 @@
 }
 
 .card-title {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -188,7 +188,7 @@
 }
 
 .card-data {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   display: flex;
   gap: 32px;
 }
@@ -216,7 +216,7 @@
 .title-name {
   text-transform: uppercase;
   text-overflow: ellipsis;
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -226,7 +226,7 @@
 }
 
 .title-type {
-  font-family: DM Sans;
+  font-family: 'DM Sans';
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
