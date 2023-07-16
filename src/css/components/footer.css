@@ -91,7 +91,7 @@
 .copyrigth-block {
   display: flex;
   gap: 14px;
-  color: rgba(246, 245, 239, 0.5);
+  color: var(--reviews-card-text);
   justify-content: center;
   font-size: 12px;
   font-weight: 400;
@@ -206,7 +206,7 @@
 }
 
 .to-top:hover {
-  box-shadow: 1px 1px 25px 10px rgba(146, 148, 248, 0.4);
+  box-shadow: 1px 1px 25px 10px var(--reviews-card-text);
 }
 
 .to-top.active {
@@ -214,8 +214,6 @@
   pointer-events: auto;
   opacity: 1;
 }
-
-
 
 @media screen and (min-width: 768px) {
   .to-top {
