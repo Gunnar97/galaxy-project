@@ -19,7 +19,6 @@
 }
 
 .section-title {
-  font-family: DM Sans;
   font-style: normal;
   font-weight: 500;
   line-height: 110%;
@@ -34,7 +33,6 @@
   flex-direction: column;
   gap: 40px;
 
-  font-family: DM Sans;
   font-size: 36px;
   font-style: normal;
   font-weight: 500;
@@ -49,7 +47,7 @@
   width: 255px;
   height: 255px;
   border-radius: 50%;
-  opacity: 0.6000000238418579;
+  opacity: 0.6;
   background: var(--background-gradient-circles);
   filter: blur(100px);
   z-index: -1;
@@ -61,7 +59,7 @@
 
   width: 195px;
   height: 195px;
-  opacity: 0.30000001192092896;
+  opacity: 0.3;
   background: var(--background-gradient-circles-small);
   filter: blur(100px);
   z-index: 1;
@@ -179,7 +177,6 @@
 }
 
 .card-title {
-  font-family: DM Sans;
   box-sizing: border-box;
   width: 100%;
   display: flex;
@@ -188,7 +185,6 @@
 }
 
 .card-data {
-  font-family: DM Sans;
   display: flex;
   gap: 32px;
 }
@@ -216,7 +212,6 @@
 .title-name {
   text-transform: uppercase;
   text-overflow: ellipsis;
-  font-family: DM Sans;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -226,7 +221,6 @@
 }
 
 .title-type {
-  font-family: DM Sans;
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -255,14 +249,12 @@
   .background-figure-big {
     width: 255px;
     height: 255px;
-    transform: rotate(-44.916deg);
     left: -10%;
     top: -20%;
   }
   .background-figure-small {
     width: 195px;
     height: 195px;
-    transform: rotate(-44.916deg);
     left: 40%;
   }
 
@@ -282,7 +274,6 @@
     width: 704px;
     height: 576px;
     margin: 0 auto;
-    /* outline: 1px solid tomato; */
   }
 
   .swiper-container {
@@ -308,9 +299,9 @@
     transform: translateY(-50%);
   }
 
-  .yahts-section {
+  /* .yahts-section {
     padding: -200px;
-  }
+  } */
 
   .section-title {
     max-width: 640px;
@@ -461,7 +452,7 @@
     opacity: 0.2;
     width: 100%;
     height: 1611.22px;
-    transform: rotate(101.767deg) translate(63px, -47px);
+    transform: rotate(101.77deg) translate(63px, -47px);
     background-image: url('../../img/yachts-block/background/bg-lines-zero-degrees.png');
     background-repeat: no-repeat;
     background-position: 50% 0;
